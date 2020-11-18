@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
+library work;
+
+
+entity SignExtend is
+	port(
+		ADIzq: In std_logic_vector(0 to 2);
+		ADDer: In std_logic_vector(0 to 2);
+		SignImm: out std_logic_vector(0 to 15);
+	);
+	
+end SignExtend;
+
+architecture behaivour of SignExtend is
+
+begin
+
+if(ADIzq(0)='1') then
+	SignImm<=x"3FF" & ADIzq & ADDer;
+else
+	SignImm<="0000000000" & ADIzq & ADDer;
+end if;
+
+end behaivour;
