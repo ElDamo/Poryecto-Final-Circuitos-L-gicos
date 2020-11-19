@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 18 23:48:14 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : DataMemory
+Top-level Entity Name : DataMemory
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 152 / 6,272 ( 2 % )
+    Total combinational functions : 88 / 6,272 ( 1 % )
+    Dedicated logic registers : 128 / 6,272 ( 2 % )
+Total registers : 128
+Total pins : 37 / 92 ( 40 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
