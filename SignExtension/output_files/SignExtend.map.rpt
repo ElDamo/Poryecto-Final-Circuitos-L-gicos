@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SignExtend
-Tue Nov 17 20:33:29 2020
+Thu Nov 19 20:17:05 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 17 20:33:29 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 19 20:17:05 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; SignExtend                                  ;
 ; Top-level Entity Name              ; SignExtend                                  ;
@@ -160,13 +160,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; SignExtend.vhd                   ; yes             ; User VHDL File  ; C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                  ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
+; SignExtend.vhd                   ; yes             ; User VHDL File  ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -193,7 +193,7 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; DR[0]~input ;
+; Maximum fan-out node                        ; DR[2]~input ;
 ; Maximum fan-out                             ; 11          ;
 ; Total fan-out                               ; 57          ;
 ; Average fan-out                             ; 0.75        ;
@@ -255,37 +255,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 17 20:32:48 2020
+    Info: Processing started: Thu Nov 19 20:16:42 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SignExtend -c SignExtend
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file signextend.vhd
-    Info (12022): Found design unit 1: SignExtend-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 18
-    Info (12023): Found entity 1: SignExtend File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 8
+    Info (12022): Found design unit 1: SignExtend-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 18
+    Info (12023): Found entity 1: SignExtend File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 8
 Info (12127): Elaborating entity "SignExtend" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "zfOP[12]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[11]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[10]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[9]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[8]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[7]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[6]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[5]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[4]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[3]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[2]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[1]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
-    Warning (13410): Pin "zfOP[0]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/PF/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[3]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[4]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[5]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[6]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[7]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[8]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[9]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[10]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[11]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[12]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[13]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[14]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
+    Warning (13410): Pin "zfOP[15]" is stuck at GND File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/SignExtension/SignExtend.vhd Line: 12
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 32 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Tue Nov 17 20:33:29 2020
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:00:57
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Thu Nov 19 20:17:05 2020
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:47
 
 
