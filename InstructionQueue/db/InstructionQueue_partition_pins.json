@@ -68,7 +68,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "address[0]",
+					"name" : "address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "address[5]",
 					"strict" : false
 				},
 				{
@@ -76,7 +84,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "address[0]",
+					"strict" : false
+				},
+				{
 					"name" : "address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "address[6]",
 					"strict" : false
 				},
 				{

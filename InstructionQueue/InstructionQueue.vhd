@@ -10,7 +10,7 @@ entity InstructionQueue is
 				clk : in std_logic;
 				reset : in std_logic;
 				write_on : in std_logic;
-				address : in std_logic_vector(2 downto 0);
+				address : in std_logic_vector(15 downto 0);
 				data_in : in std_logic_vector(15 downto 0);
 				data_out : out std_logic_vector(15 downto 0));
 				
@@ -18,7 +18,7 @@ end InstructionQueue;
 
 architecture behavior of InstructionQueue is
 
-type memory is array (7 downto 0) of std_logic_vector(15 downto 0);
+type memory is array (255 downto 0) of std_logic_vector(15 downto 0);
 signal ins : memory := (others => "0000000000000000");
 
 begin
