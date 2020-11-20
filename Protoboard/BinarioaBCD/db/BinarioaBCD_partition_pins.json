@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bcd0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[15]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "binary_in[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

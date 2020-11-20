@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'R8'
+Slack : -2.744
+TNS   : -22.499
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq:inst3|temporal'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq:inst3|temporal'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'R8'
+Slack : 0.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'R8'
+Slack : -3.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq:inst3|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Slow 1200mV 0C Model Setup 'R8'
+Slack : -2.372
+TNS   : -17.945
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq:inst3|temporal'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq:inst3|temporal'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'R8'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'R8'
+Slack : -3.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq:inst3|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Setup 'R8'
+Slack : -1.168
+TNS   : -5.504
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq:inst3|temporal'
+Slack : 0.541
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq:inst3|temporal'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'R8'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'R8'
+Slack : -3.000
+TNS   : -21.981
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq:inst3|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

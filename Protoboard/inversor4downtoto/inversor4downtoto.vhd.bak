@@ -1,0 +1,23 @@
+library ieee;
+
+use ieee.std_logic_arith.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity inversor4downtoto is
+	port(
+				edownto : in std_logic_vector(3 downto 0);
+				sto : out std_logic_vector(0 to 3));
+				
+end inversor4downtoto;
+
+
+architecture behavior of inversor4downtoto is
+	begin
+		
+		sto(3) <= edownto(0);
+		sto(2) <= edownto(1);
+		sto(1) <= edownto(2);
+		sto(0) <= edownto(3);
+	
+end behavior;

@@ -1,0 +1,35 @@
+|inversor16todownto
+eto[15] => sdownto[0].DATAIN
+eto[14] => sdownto[1].DATAIN
+eto[13] => sdownto[2].DATAIN
+eto[12] => sdownto[3].DATAIN
+eto[11] => sdownto[4].DATAIN
+eto[10] => sdownto[5].DATAIN
+eto[9] => sdownto[6].DATAIN
+eto[8] => sdownto[7].DATAIN
+eto[7] => sdownto[8].DATAIN
+eto[6] => sdownto[9].DATAIN
+eto[5] => sdownto[10].DATAIN
+eto[4] => sdownto[11].DATAIN
+eto[3] => sdownto[12].DATAIN
+eto[2] => sdownto[13].DATAIN
+eto[1] => sdownto[14].DATAIN
+eto[0] => sdownto[15].DATAIN
+sdownto[0] <= eto[15].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[1] <= eto[14].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[2] <= eto[13].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[3] <= eto[12].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[4] <= eto[11].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[5] <= eto[10].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[6] <= eto[9].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[7] <= eto[8].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[8] <= eto[7].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[9] <= eto[6].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[10] <= eto[5].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[11] <= eto[4].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[12] <= eto[3].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[13] <= eto[2].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[14] <= eto[1].DB_MAX_OUTPUT_PORT_TYPE
+sdownto[15] <= eto[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

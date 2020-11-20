@@ -1,0 +1,187 @@
+|Practica2
+D1 <= deco2a4:inst4.D1
+R8 => div_freq:inst3.clk
+D2 <= deco2a4:inst4.D2
+D3 <= deco2a4:inst4.D3
+A <= decoBCDa7:inst1.a
+A0 => mux4a1:inst.A[0]
+A1 => mux4a1:inst.A[1]
+A2 => mux4a1:inst.A[2]
+A3 => mux4a1:inst.A[3]
+B0 => mux4a1:inst.B[0]
+B1 => mux4a1:inst.B[1]
+B2 => mux4a1:inst.B[2]
+B3 => mux4a1:inst.B[3]
+C0 => mux4a1:inst.C[0]
+C1 => mux4a1:inst.C[1]
+C2 => mux4a1:inst.C[2]
+C3 => mux4a1:inst.C[3]
+E0 => mux4a1:inst.D[0]
+E1 => mux4a1:inst.D[1]
+E2 => mux4a1:inst.D[2]
+E3 => mux4a1:inst.D[3]
+B <= decoBCDa7:inst1.b
+C <= decoBCDa7:inst1.c
+d <= decoBCDa7:inst1.d
+E <= decoBCDa7:inst1.e
+f <= decoBCDa7:inst1.f
+g <= decoBCDa7:inst1.g
+D0 <= deco2a4:inst4.D0
+
+
+|Practica2|deco2a4:inst4
+S[1] => D1.IN0
+S[1] => D3.IN0
+S[1] => D0.IN0
+S[1] => D2.IN0
+S[0] => D2.IN1
+S[0] => D3.IN1
+S[0] => D0.IN1
+S[0] => D1.IN1
+D0 <= D0.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= D1.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= D2.DB_MAX_OUTPUT_PORT_TYPE
+D3 <= D3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|cont2:inst2
+Clock => temp[1].CLK
+Clock => temp[0].CLK
+Reset => temp[1].ACLR
+Reset => temp[0].ACLR
+D[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+D[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|div_freq:inst3
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => temporal.CLK
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+reset => counter[8].ACLR
+reset => counter[9].ACLR
+reset => counter[10].ACLR
+reset => counter[11].ACLR
+reset => counter[12].ACLR
+reset => counter[13].ACLR
+reset => counter[14].ACLR
+reset => counter[15].ACLR
+reset => counter[16].ACLR
+reset => temporal.ACLR
+clk_out <= temporal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|decoBCDa7:inst1
+T[3] => a.IN1
+T[3] => a.IN0
+T[3] => b.IN1
+T[3] => c.IN0
+T[3] => e.IN0
+T[3] => e.IN1
+T[3] => f.IN0
+T[3] => g.IN0
+T[3] => a.IN0
+T[3] => a.IN1
+T[3] => b.IN0
+T[3] => b.IN1
+T[3] => b.IN1
+T[3] => c.IN0
+T[3] => c.IN0
+T[3] => c.IN0
+T[3] => d.IN1
+T[3] => f.IN1
+T[2] => a.IN0
+T[2] => a.IN0
+T[2] => c.IN1
+T[2] => d.IN1
+T[2] => d.IN1
+T[2] => e.IN1
+T[2] => f.IN0
+T[2] => a.IN0
+T[2] => a.IN1
+T[2] => b.IN1
+T[2] => c.IN1
+T[2] => d.IN1
+T[2] => e.IN1
+T[2] => g.IN0
+T[1] => a.IN1
+T[1] => a.IN1
+T[1] => b.IN0
+T[1] => d.IN0
+T[1] => f.IN1
+T[1] => g.IN1
+T[1] => a.IN0
+T[1] => a.IN1
+T[1] => b.IN0
+T[1] => c.IN1
+T[1] => f.IN1
+T[0] => a.IN1
+T[0] => b.IN1
+T[0] => b.IN1
+T[0] => c.IN1
+T[0] => g.IN1
+T[0] => a.IN1
+T[0] => a.IN1
+T[0] => d.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|mux4a1:inst
+A[3] => Mux3.IN0
+A[2] => Mux2.IN0
+A[1] => Mux1.IN0
+A[0] => Mux0.IN0
+B[3] => Mux3.IN1
+B[2] => Mux2.IN1
+B[1] => Mux1.IN1
+B[0] => Mux0.IN1
+C[3] => Mux3.IN2
+C[2] => Mux2.IN2
+C[1] => Mux1.IN2
+C[0] => Mux0.IN2
+D[3] => Mux3.IN3
+D[2] => Mux2.IN3
+D[1] => Mux1.IN3
+D[0] => Mux0.IN3
+S[1] => Mux0.IN5
+S[1] => Mux1.IN5
+S[1] => Mux2.IN5
+S[1] => Mux3.IN5
+S[0] => Mux0.IN4
+S[0] => Mux1.IN4
+S[0] => Mux2.IN4
+S[0] => Mux3.IN4
+F[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+F[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

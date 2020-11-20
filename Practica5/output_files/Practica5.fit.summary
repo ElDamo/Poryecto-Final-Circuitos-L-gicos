@@ -1,0 +1,16 @@
+Fitter Status : Failed - Fri Nov 13 11:02:29 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Practica5
+Top-level Entity Name : Practica5
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 385 / 22,320 ( 2 % )
+    Total combinational functions : 273 / 22,320 ( 1 % )
+    Dedicated logic registers : 128 / 22,320 ( < 1 % )
+Total registers : 128
+Total pins : 207 / 154 ( 134 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

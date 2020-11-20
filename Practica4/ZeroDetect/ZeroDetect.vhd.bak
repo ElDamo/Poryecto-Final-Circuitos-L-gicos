@@ -1,0 +1,25 @@
+library ieee;
+
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_1164.all;
+
+entity ZeroDetect is
+
+	port(
+				I : in std_logic_vector(0 to 15);
+				Z : out std_logic);
+
+end ZeroDetect;
+
+
+architecture behavior of ZeroDetect is
+
+	begin
+		
+		if (I = "0000000000000000") then
+			Z <= 1;
+			else
+			Z <= 0;
+		end if;
+end behavior;

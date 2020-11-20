@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity decoBCDa7 is
+	port(
+			A: in std_logic_vector(0 to 3);
+			F: out std_logic_vector(0 to 6));
+end decoBCDa7;
+
+architecture behavior of decoBCDa7 is
+	begin
+		F(0) <= (not(A(0)) and not(A(2))) or (A(1) and A(2)) or (A(1) and not(A(3))) or (A(0) and A(2) and not(A(3))) or (not(A(0)) and not(A(1)) and A(3)) or (A(0) and not(A(1)) and not(A(2)));
+		F(1) <= (not(A(2)) and not(A(3))) or (not(A(0)) and not(A(2))) or (A(0) and not(A(1)) and A(3)) or (not(A(0)) and not(A(1)) and not(A(3))) or (A(0) and A(1) and not(A(3)));
+		F(2) <= (A(0) and not(A(1))) or (not(A(2)) and A(3)) or (A(2) and not(A(3))) or (not(A(1)) and not(A(3))) or (A(0) and not(A(3)));
+		F(3) <= (not(A(0)) and not(A(1)) and A(3)) or (A(0) and not(A(1)) and A(2)) or (not(A(0)) and A(1) and A(2)) or (A(0) and A(1) and not(A(2))) or (not(A(0)) and not(A(2)) and not(A(3)));
+		F(4) <= (A(2) and A(3)) or (not(A(0)) and A(1)) or (A(0) and A(1) and A(3)) or (not(A(0)) and not(A(1)) and not(A(2)));
+		F(5) <= (not(A(0)) and not(A(1))) or (not(A(2)) and A(3)) or (A(1) and A(3)) or (not(A(1)) and A(2) and not(A(3))) or (not(A(0)) and A(1) and A(2));
+		F(6) <= (not(A(2)) and A(3)) or (not(A(0)) and A(1)) or (A(0) and A(3)) or (A(1) and not(A(2))) or (not(A(1)) and A(2) and not(A(3)));
+end behavior;
