@@ -11,7 +11,14 @@ entity DataMemory is
 		clk: in std_logic; 
 		reset: in std_logic;
 		MW: in std_logic;--1 escribe MB en la dirección SA
-		RD: out std_logic_vector(15 downto 0) --lee la dirección SA en RD
+		RD0: out std_logic_vector(15 downto 0);
+		RD1: out std_logic_vector(15 downto 0);
+		RD2: out std_logic_vector(15 downto 0);
+		RD3: out std_logic_vector(15 downto 0);
+		RD4: out std_logic_vector(15 downto 0);
+		RD5: out std_logic_vector(15 downto 0);
+		RD6: out std_logic_vector(15 downto 0);
+		RD7: out std_logic_vector(15 downto 0)
 	);
 	
 end DataMemory;
@@ -34,6 +41,13 @@ begin
 	end if;
 end process;
 
-RD<=data(to_integer(unsigned(SA))); --Devuelvo el dato solicitado o el que se escribió
+RD0<=data(0); --Se devuelven los datos guardados en la memoria
+RD1<=data(1);
+RD2<=data(2);
+RD3<=data(3);
+RD4<=data(4);
+RD5<=data(5);
+RD6<=data(6);
+RD7<=data(7);
 
 end behaivour;
