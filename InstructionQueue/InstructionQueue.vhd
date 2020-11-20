@@ -12,12 +12,21 @@ entity InstructionQueue is
 				write_on : in std_logic;
 				address : in std_logic_vector(15 downto 0);
 				data_in : in std_logic_vector(15 downto 0);
-				data_out : out std_logic_vector(15 downto 0));
+				data_out : out std_logic_vector(15 downto 0);
+				MB: out std_logic;
+				FS: out std_logic_vector(3 downto 0);
+				MD: out std_logic;
+				RW: out std_logic;
+				MW: out std_logic;
+				PL: out std_logic;
+				JB: out std_logic;
+				BC: out std_logic
+	);
 				
 end InstructionQueue;
 
 architecture behavior of InstructionQueue is
-
+signal aux: std_logic_vector(15 downto 0);
 type memory is array (255 downto 0) of std_logic_vector(15 downto 0);
 signal ins : memory := (others => "0000000000000000");
 
@@ -35,6 +44,17 @@ begin
 		end if;
 	end process;
 	
-data_out <= ins(to_integer(unsigned(address)));
+aux <= ins(to_integer(unsigned(address)));
+
+data_out<=aux;
+
+MB<= aux(15);
+FS<= aux(12 downto 10) & (aux(9) and not(aux(15) and aux(14)));
+MD<= aux(13);
+RW<= not(aux(12));
+MW<= (aux(14) and not(aux(15)));
+PL<= (aux(15) and aux(14));
+JB<= aux(13);
+BC<= aux(9);
 	
 end behavior;

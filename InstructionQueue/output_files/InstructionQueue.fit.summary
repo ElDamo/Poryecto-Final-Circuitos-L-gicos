@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Nov 19 20:55:14 2020
+Fitter Status : Successful - Fri Nov 20 13:28:48 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : InstructionQueue
 Top-level Entity Name : InstructionQueue
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 5,056 / 22,320 ( 23 % )
-    Total combinational functions : 3,016 / 22,320 ( 14 % )
+Total logic elements : 5,064 / 22,320 ( 23 % )
+    Total combinational functions : 3,019 / 22,320 ( 14 % )
     Dedicated logic registers : 4,096 / 22,320 ( 18 % )
 Total registers : 4096
-Total pins : 51 / 154 ( 33 % )
+Total pins : 62 / 154 ( 40 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
