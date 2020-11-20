@@ -23,7 +23,7 @@ begin
 
 process(PL,BC,JB,RA)
 begin
-	NextPC<=PC+'1';
+	
 	if(PL='1') then 
 		if(JB='0') then
 			if(BC='1' and RA(15)='1') then --Toma el primer bit de RA, si es 1 es negativo
@@ -31,11 +31,15 @@ begin
 			else
 				if(BC='0' and RA=x"0000")then
 					NextPC<=PC+SignImm;
+				else
+					NextPC<=PC+'1';
 				end if;
 			end if;
 		else
 			NextPC<=RA;
 		end if;
+	else
+		NextPC<=PC+'1';
 	end if;
 end process;
 

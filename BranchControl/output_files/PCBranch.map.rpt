@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PCBranch
-Thu Nov 19 20:22:37 2020
+Thu Nov 19 22:37:57 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 19 20:22:37 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 19 22:37:57 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; PCBranch                                    ;
 ; Top-level Entity Name              ; PCBranch                                    ;
@@ -270,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 19 20:22:14 2020
+    Info: Processing started: Thu Nov 19 22:37:34 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PCBranch -c PCBranch
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -278,11 +278,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file pcbranc
     Info (12022): Found design unit 1: PCBranch-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 21
     Info (12023): Found entity 1: PCBranch File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 8
 Info (12127): Elaborating entity "PCBranch" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at PCBranch.vhd(26): signal "PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 26
 Warning (10492): VHDL Process Statement warning at PCBranch.vhd(30): signal "PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 30
 Warning (10492): VHDL Process Statement warning at PCBranch.vhd(30): signal "SignImm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 30
 Warning (10492): VHDL Process Statement warning at PCBranch.vhd(33): signal "PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 33
 Warning (10492): VHDL Process Statement warning at PCBranch.vhd(33): signal "SignImm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at PCBranch.vhd(35): signal "PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at PCBranch.vhd(42): signal "PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/BranchControl/PCBranch.vhd Line: 42
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -290,10 +291,10 @@ Info (21057): Implemented 121 device resources after synthesis - the final resou
     Info (21058): Implemented 51 input pins
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 54 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 4792 megabytes
-    Info: Processing ended: Thu Nov 19 20:22:37 2020
+    Info: Processing ended: Thu Nov 19 22:37:57 2020
     Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Total CPU time (on all processors): 00:00:45
 
 
