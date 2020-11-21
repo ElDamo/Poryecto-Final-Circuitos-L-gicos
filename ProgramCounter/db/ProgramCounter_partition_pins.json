@@ -292,23 +292,79 @@
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[13]",
+					"name" : "RA[15]",
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[10]",
+					"name" : "PL",
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[11]",
+					"name" : "BC",
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[14]",
+					"name" : "RA[2]",
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[15]",
+					"name" : "RA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "JB",
 					"strict" : false
 				},
 				{
@@ -353,6 +409,18 @@
 				},
 				{
 					"name" : "instruccion[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instruccion[14]",
+					"strict" : false
+				},
+				{
+					"name" : "instruccion[13]",
+					"strict" : false
+				},
+				{
+					"name" : "instruccion[15]",
 					"strict" : false
 				},
 				{
@@ -848,7 +916,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "instruccion[10]",
+					"strict" : false
+				},
+				{
 					"name" : "memory_bank_data_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instruccion[11]",
 					"strict" : false
 				},
 				{

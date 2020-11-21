@@ -1,5 +1,5 @@
 Flow report for InstructionQueue
-Fri Nov 20 13:29:08 2020
+Fri Nov 20 17:40:24 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 20 13:28:59 2020       ;
+; Flow Status                        ; Successful - Fri Nov 20 17:40:16 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; InstructionQueue                            ;
 ; Top-level Entity Name              ; InstructionQueue                            ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/20/2020 13:27:34 ;
+; Start date & time ; 11/20/2020 17:39:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; InstructionQueue    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 93094400418476.160590045322892         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 93094400418476.160591554622536         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -91,11 +91,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 4837 MB             ; 00:00:56                           ;
-; Fitter               ; 00:00:35     ; 1.0                     ; 5311 MB             ; 00:00:35                           ;
+; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4827 MB             ; 00:00:55                           ;
+; Fitter               ; 00:00:30     ; 1.0                     ; 5311 MB             ; 00:00:35                           ;
 ; Assembler            ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.1                     ; 4798 MB             ; 00:00:08                           ;
-; Total                ; 00:01:22     ; --                      ; --                  ; 00:01:41                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.1                     ; 4799 MB             ; 00:00:06                           ;
+; Total                ; 00:01:13     ; --                      ; --                  ; 00:01:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

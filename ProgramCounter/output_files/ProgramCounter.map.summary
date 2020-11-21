@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Nov 21 15:39:20 2020
+Analysis & Synthesis Status : Successful - Sat Nov 21 15:59:31 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ProgramCounter
 Top-level Entity Name : ProgramCounter
 Family : Cyclone IV E
-Total logic elements : 215
-    Total combinational functions : 215
-    Dedicated logic registers : 65
-Total registers : 65
-Total pins : 229
+Total logic elements : 234
+    Total combinational functions : 228
+    Dedicated logic registers : 71
+Total registers : 71
+Total pins : 248
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

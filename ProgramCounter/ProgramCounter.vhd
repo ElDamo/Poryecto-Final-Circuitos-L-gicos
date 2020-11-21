@@ -19,6 +19,10 @@ entity ProgramCounter is
 		memory6 : in std_logic_vector(15 downto 0);
 		memory7 : in std_logic_vector(15 downto 0);
 		memory_bank_data_in : in std_logic_vector(15 downto 0);
+		PL : in std_logic; 
+		JB: in std_logic; 
+		BC: in std_logic; 
+		RA: in std_logic_vector(15 downto 0); --Valor del registro de la dirección SA
 		contador : out std_logic_vector(15 downto 0) := X"0000";
 		DR : out std_logic_vector(2 downto 0); -- se usa para escribir en registros de propóstio general
 		memory_bank_data : out std_logic_vector(15 downto 0);
@@ -31,7 +35,7 @@ entity ProgramCounter is
 end ProgramCounter;
 
 architecture behaivour of ProgramCounter is
-
+signal AD_extended: std_logic_vector(15 downto 0);
 signal contador_aux : std_logic_vector(15 downto 0) := X"0000";
 
 begin
@@ -54,11 +58,11 @@ DR <= instruccion(8 downto 6);
 										when "110" => memory_out <= (memory6 + instruccion(2 downto 0));
 										when "111" => memory_out <= (memory7 + instruccion(2 downto 0));
 					end case;
-					contador_aux <= contador_aux + 1;
+					--contador_aux <= contador_aux + 1;
 				elsif instruccion(11) = '1' then --sabemos que es load immediate
 					memory_out(15 downto 3) <= "0000000000000";
 					memory_out(2 downto 0) <= instruccion(2 downto 0);
-					contador_aux <= contador_aux + 1;
+					--contador_aux <= contador_aux + 1;
 				end if;
 				
 				elsif instruccion(15 downto 13) = "010" then --comprobamos si es store
@@ -83,7 +87,7 @@ DR <= instruccion(8 downto 6);
 										when "110" => memory_bank_address <= memory6;
 										when "111" => memory_bank_address <= memory7;
 					end case;
-					contador_aux <= contador_aux + 1;
+					--contador_aux <= contador_aux + 1;
 					
 				elsif instruccion(15 downto 13) = "001" then --comprobamos que es load
 					memory_bank_write <= '0';
@@ -98,10 +102,40 @@ DR <= instruccion(8 downto 6);
 										when "110" => memory_bank_address <= memory6;
 										when "111" => memory_bank_address <= memory7;
 					end case;
-					contador_aux <= contador_aux + 1;
+					--contador_aux <= contador_aux + 1;
 					
-				--aqui es donde tiene que ir el branch, jump, y la unidad funcional con elsifs	
+				--aqui es donde tiene que ir el branch, jump, y la unidad funcional con elsifs
+						
 			end if;
+			--Realizo el aumento del contador, checa las señales que regresa el instructionQueue de extender el opcode
+			if(PL='1') then 
+				if(JB='0') then --Hacer branch
+					--Extiendo la señal 
+					if(instruccion(8)='1') then
+						AD_extended<="1111111111" & instruccion(8 downto 6) & instruccion(2 downto 0);
+					else
+						AD_extended<="0000000000" & instruccion(8 downto 6) & instruccion(2 downto 0);
+					end if;
+					
+					--Branch condicional negativo
+					if(BC='1' and RA(15)='1') then --Toma el primer bit de RA, si es 1 es negativo
+						contador_aux<=contador_aux+AD_extended;
+					else
+						--Branch condicional en cero
+						if(BC='0' and RA=x"0000")then
+							contador_aux<=contador_aux+AD_extended;
+						else
+							contador_aux<=contador_aux+'1';
+						end if;
+					end if;
+				else
+					--Jump
+					contador_aux<=RA;
+				end if;
+			else
+				contador_aux<=contador_aux+'1';
+			end if;	
+			
 		end if;
 	end process;
 	
