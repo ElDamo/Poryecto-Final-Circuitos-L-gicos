@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Nov 21 14:56:51 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : MemoryBank
+Top-level Entity Name : MemoryBank
+Family : Cyclone IV E
+Total logic elements : 7,096
+    Total combinational functions : 3,016
+    Dedicated logic registers : 4,096
+Total registers : 4096
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
