@@ -36,6 +36,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "contador[8]",
+					"strict" : false
+				},
+				{
+					"name" : "contador[9]",
+					"strict" : false
+				},
+				{
+					"name" : "contador[10]",
+					"strict" : false
+				},
+				{
+					"name" : "contador[11]",
+					"strict" : false
+				},
+				{
+					"name" : "contador[12]",
+					"strict" : false
+				},
+				{
+					"name" : "contador[13]",
+					"strict" : false
+				},
+				{
+					"name" : "contador[14]",
+					"strict" : false
+				},
+				{
+					"name" : "contador[15]",
+					"strict" : false
+				},
+				{
 					"name" : "DR[0]",
 					"strict" : false
 				},
@@ -45,6 +77,138 @@
 				},
 				{
 					"name" : "DR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[8]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[9]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[10]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[11]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[12]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[13]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[14]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_address[15]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_write",
 					"strict" : false
 				},
 				{
@@ -128,7 +292,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[15]",
+					"name" : "instruccion[13]",
 					"strict" : false
 				},
 				{
@@ -144,11 +308,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "instruccion[15]",
+					"strict" : false
+				},
+				{
 					"name" : "memory5[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[3]",
+					"name" : "instruccion[0]",
 					"strict" : false
 				},
 				{
@@ -156,7 +324,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[4]",
+					"name" : "instruccion[1]",
 					"strict" : false
 				},
 				{
@@ -184,11 +352,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[5]",
-					"strict" : false
-				},
-				{
-					"name" : "instruccion[0]",
+					"name" : "instruccion[2]",
 					"strict" : false
 				},
 				{
@@ -224,10 +388,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "instruccion[1]",
-					"strict" : false
-				},
-				{
 					"name" : "memory5[2]",
 					"strict" : false
 				},
@@ -257,10 +417,6 @@
 				},
 				{
 					"name" : "memory3[2]",
-					"strict" : false
-				},
-				{
-					"name" : "instruccion[2]",
 					"strict" : false
 				},
 				{
@@ -677,6 +833,82 @@
 				},
 				{
 					"name" : "memory3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "instruccion[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instruccion[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instruccion[5]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "memory_bank_data_in[15]",
 					"strict" : false
 				}
 			]
