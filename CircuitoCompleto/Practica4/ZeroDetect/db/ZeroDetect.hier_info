@@ -1,0 +1,20 @@
+|ZeroDetect
+I[15] => Equal0.IN15
+I[14] => Equal0.IN14
+I[13] => Equal0.IN13
+I[12] => Equal0.IN12
+I[11] => Equal0.IN11
+I[10] => Equal0.IN10
+I[9] => Equal0.IN9
+I[8] => Equal0.IN8
+I[7] => Equal0.IN7
+I[6] => Equal0.IN6
+I[5] => Equal0.IN5
+I[4] => Equal0.IN4
+I[3] => Equal0.IN3
+I[2] => Equal0.IN2
+I[1] => Equal0.IN1
+I[0] => Equal0.IN0
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

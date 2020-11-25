@@ -1,0 +1,521 @@
+Analysis & Synthesis report for CircuitoCompleto
+Sun Nov 22 11:32:21 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|state
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Protoboard:inst6|BinarioaBCD:b2v_inst2
+ 12. Parameter Settings for User Entity Instance: Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3
+ 13. Port Connectivity Checks: "Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3"
+ 14. Port Connectivity Checks: "Protoboard:inst6|Practica2:b2v_inst7|cont2:b2v_inst2"
+ 15. Port Connectivity Checks: "Protoboard:inst6|BinarioaBCD:b2v_inst2"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 22 11:32:21 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; CircuitoCompleto                            ;
+; Top-level Entity Name              ; CircuitoCompleto                            ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 623                                         ;
+;     Total combinational functions  ; 495                                         ;
+;     Dedicated logic registers      ; 204                                         ;
+; Total registers                    ; 204                                         ;
+; Total pins                         ; 175                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; CircuitoCompleto   ; CircuitoCompleto   ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                        ;
++------------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                                                          ; Library ;
++------------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Practica4/Practica4.vhd                              ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd                              ;         ;
+; Protoboard/Practica2/mux4a1/mux4a1.vhd               ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd               ;         ;
+; Protoboard/Practica2/div_freq/div_freq.vhd           ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd           ;         ;
+; Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd         ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd         ;         ;
+; Protoboard/Practica2/deco2a4/deco2a4.vhd             ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd             ;         ;
+; Protoboard/Practica2/cont2/cont2.vhd                 ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd                 ;         ;
+; Protoboard/Practica2/Practica2.vhd                   ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd                   ;         ;
+; Protoboard/inversor16todownto/inversor16todownto.vhd ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd ;         ;
+; Protoboard/inversor4downtoto/inversor4downtoto.vhd   ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd   ;         ;
+; Protoboard/BinarioaBCD/BinarioaBCD.vhd               ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd               ;         ;
+; Protoboard/Protoboard.vhd                            ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Protoboard.vhd                            ;         ;
+; Practica5/Practica5.vhd                              ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica5/Practica5.vhd                              ;         ;
+; Practica4/ZeroDetect/ZeroDetect.vhd                  ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd                  ;         ;
+; Practica4/Shifter/Shifter.vhd                        ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Shifter/Shifter.vhd                        ;         ;
+; Practica4/SDivider/SDivider.vhd                      ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/SDivider/SDivider.vhd                      ;         ;
+; Practica4/mux2a1/mux2a1.vhd                          ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd                          ;         ;
+; Practica4/FirstBit/FirstBit.vhd                      ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd                      ;         ;
+; Practica4/CircuitoLogico/CircuitoLogico.vhd          ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd          ;         ;
+; Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd  ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd  ;         ;
+; CircuitoCompleto.bdf                                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/CircuitoCompleto.bdf                                 ;         ;
+; inversor16downtoto.vhd                               ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/inversor16downtoto.vhd                               ;         ;
+; constant_in.vhd                                      ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/constant_in.vhd                                      ;         ;
+; data_in.vhd                                          ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/data_in.vhd                                          ;         ;
+; busDivider.vhd                                       ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/busDivider.vhd                                       ;         ;
+; PalabraControl.vhd                                   ; yes             ; User VHDL File                     ; C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/PalabraControl.vhd                                   ;         ;
++------------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 623         ;
+;                                             ;             ;
+; Total combinational functions               ; 495         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 342         ;
+;     -- 3 input functions                    ; 106         ;
+;     -- <=2 input functions                  ; 47          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 459         ;
+;     -- arithmetic mode                      ; 36          ;
+;                                             ;             ;
+; Total registers                             ; 204         ;
+;     -- Dedicated logic registers            ; 204         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 175         ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 202         ;
+; Total fan-out                               ; 2677        ;
+; Average fan-out                             ; 2.55        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Entity Name        ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------------+--------------+
+; |CircuitoCompleto                    ; 495 (0)             ; 204 (0)                   ; 0           ; 0            ; 0       ; 0         ; 175  ; 0            ; |CircuitoCompleto                                                          ; CircuitoCompleto   ; work         ;
+;    |Practica4:inst2|                 ; 112 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2                                          ; Practica4          ; work         ;
+;       |CircuitoAritmetico:b2v_inst2| ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|CircuitoAritmetico:b2v_inst2             ; CircuitoAritmetico ; work         ;
+;       |CircuitoLogico:b2v_inst3|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|CircuitoLogico:b2v_inst3                 ; CircuitoLogico     ; work         ;
+;       |Shifter:b2v_inst6|            ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|Shifter:b2v_inst6                        ; Shifter            ; work         ;
+;       |ZeroDetect:b2v_inst8|         ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|ZeroDetect:b2v_inst8                     ; ZeroDetect         ; work         ;
+;       |mux2a1:b2v_inst5|             ; 50 (50)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|mux2a1:b2v_inst5                         ; mux2a1             ; work         ;
+;    |Practica5:inst|                  ; 234 (234)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica5:inst                                           ; Practica5          ; work         ;
+;    |Protoboard:inst6|                ; 117 (0)             ; 76 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6                                         ; Protoboard         ; work         ;
+;       |BinarioaBCD:b2v_inst2|        ; 66 (66)             ; 56 (56)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2                   ; BinarioaBCD        ; work         ;
+;       |Practica2:b2v_inst7|          ; 51 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7                     ; Practica2          ; work         ;
+;          |cont2:b2v_inst2|           ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|cont2:b2v_inst2     ; cont2              ; work         ;
+;          |deco2a4:b2v_inst4|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|deco2a4:b2v_inst4   ; deco2a4            ; work         ;
+;          |decoBCDa7:b2v_inst1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|decoBCDa7:b2v_inst1 ; decoBCDa7          ; work         ;
+;          |div_freq:b2v_inst3|        ; 30 (30)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3  ; div_freq           ; work         ;
+;          |mux4a1:b2v_inst|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst     ; mux4a1             ; work         ;
+;    |mux2a1:inst3|                    ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|mux2a1:inst3                                             ; mux2a1             ; work         ;
+;    |mux2a1:inst4|                    ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|mux2a1:inst4                                             ; mux2a1             ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------+
+; State Machine - |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|state ;
++-------------+------------+-------------+---------------------------------------+
+; Name        ; state.done ; state.shift ; state.start                           ;
++-------------+------------+-------------+---------------------------------------+
+; state.start ; 0          ; 0           ; 0                                     ;
+; state.shift ; 0          ; 1           ; 1                                     ;
+; state.done  ; 1          ; 0           ; 1                                     ;
++-------------+------------+-------------+---------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 204   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 159   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|binary[1]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst|Mux2 ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica4:inst2|CircuitoAritmetico:b2v_inst2|Mux3         ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica5:inst|Mux20                                      ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica5:inst|Mux9                                       ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica5:inst|Mux37                                      ;
+; 7:1                ; 15 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica4:inst2|mux2a1:b2v_inst5|Selector3                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Protoboard:inst6|BinarioaBCD:b2v_inst2 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3 ;
++----------------+--------+----------------------------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                                       ;
++----------------+--------+----------------------------------------------------------------------------+
+; div            ; 100000 ; Signed Integer                                                             ;
++----------------+--------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3" ;
++-------+-------+----------+----------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                  ;
++-------+-------+----------+----------------------------------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                                             ;
++-------+-------+----------+----------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Protoboard:inst6|Practica2:b2v_inst7|cont2:b2v_inst2" ;
++-------+-------+----------+-------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                               ;
++-------+-------+----------+-------------------------------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                                          ;
++-------+-------+----------+-------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Protoboard:inst6|BinarioaBCD:b2v_inst2"                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; reset ; Input  ; Info     ; Stuck at GND                                                                        ;
+; bcd4  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 175                         ;
+; cycloneiii_ff         ; 204                         ;
+;     ENA               ; 159                         ;
+;     SLD               ; 1                           ;
+;     plain             ; 44                          ;
+; cycloneiii_lcell_comb ; 497                         ;
+;     arith             ; 36                          ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 15                          ;
+;     normal            ; 461                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 91                          ;
+;         4 data inputs ; 342                         ;
+;                       ;                             ;
+; Max LUT depth         ; 10.40                       ;
+; Average LUT depth     ; 6.24                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Nov 22 11:32:00 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CircuitoCompleto -c CircuitoCompleto
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/practica4.vhd
+    Info (12022): Found design unit 1: Practica4-bdf_type File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 37
+    Info (12023): Found entity 1: Practica4 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/mux4a1/mux4a1.vhd
+    Info (12022): Found design unit 1: mux4a1-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd Line: 16
+    Info (12023): Found entity 1: mux4a1 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/div_freq/div_freq.vhd
+    Info (12022): Found design unit 1: div_freq-Behavioral File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd Line: 13
+    Info (12023): Found entity 1: div_freq File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/decobcda7/decobcda7.vhd
+    Info (12022): Found design unit 1: decoBCDa7-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd Line: 18
+    Info (12023): Found entity 1: decoBCDa7 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/deco2a4/deco2a4.vhd
+    Info (12022): Found design unit 1: deco2a4-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd Line: 15
+    Info (12023): Found entity 1: deco2a4 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/cont2/cont2.vhd
+    Info (12022): Found design unit 1: cont2-Behavioral File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd Line: 14
+    Info (12023): Found entity 1: cont2 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/practica2.vhd
+    Info (12022): Found design unit 1: Practica2-bdf_type File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 58
+    Info (12023): Found entity 1: Practica2 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/inversor16todownto/inversor16todownto.vhd
+    Info (12022): Found design unit 1: inversor16todownto-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd Line: 16
+    Info (12023): Found entity 1: inversor16todownto File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/inversor4downtoto/inversor4downtoto.vhd
+    Info (12022): Found design unit 1: inversor4downtoto-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd Line: 18
+    Info (12023): Found entity 1: inversor4downtoto File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/binarioabcd/binarioabcd.vhd
+    Info (12022): Found design unit 1: BinarioaBCD-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd Line: 16
+    Info (12023): Found entity 1: BinarioaBCD File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file protoboard/protoboard.vhd
+    Info (12022): Found design unit 1: Protoboard-bdf_type File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 58
+    Info (12023): Found entity 1: Protoboard File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file practica5/practica5.vhd
+    Info (12022): Found design unit 1: Practica5-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica5/Practica5.vhd Line: 30
+    Info (12023): Found entity 1: Practica5 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica5/Practica5.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/zerodetect/zerodetect.vhd
+    Info (12022): Found design unit 1: ZeroDetect-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd Line: 16
+    Info (12023): Found entity 1: ZeroDetect File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/shifter/shifter.vhd
+    Info (12022): Found design unit 1: Shifter-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Shifter/Shifter.vhd Line: 17
+    Info (12023): Found entity 1: Shifter File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Shifter/Shifter.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/sdivider/sdivider.vhd
+    Info (12022): Found design unit 1: SDivider-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/SDivider/SDivider.vhd Line: 21
+    Info (12023): Found entity 1: SDivider File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/SDivider/SDivider.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/mux2a1/mux2a1.vhd
+    Info (12022): Found design unit 1: mux2a1-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd Line: 19
+    Info (12023): Found entity 1: mux2a1 File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/firstbit/firstbit.vhd
+    Info (12022): Found design unit 1: FirstBit-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd Line: 16
+    Info (12023): Found entity 1: FirstBit File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/circuitologico/circuitologico.vhd
+    Info (12022): Found design unit 1: CircuitoLogico-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd Line: 18
+    Info (12023): Found entity 1: CircuitoLogico File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file practica4/circuitoaritmetico/circuitoaritmetico.vhd
+    Info (12022): Found design unit 1: CircuitoAritmetico-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 20
+    Info (12023): Found entity 1: CircuitoAritmetico File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file circuitocompleto.bdf
+    Info (12023): Found entity 1: CircuitoCompleto
+Info (12021): Found 2 design units, including 1 entities, in source file inversor16downtoto.vhd
+    Info (12022): Found design unit 1: inversor16downtoto-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/inversor16downtoto.vhd Line: 16
+    Info (12023): Found entity 1: inversor16downtoto File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/inversor16downtoto.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file constant_in.vhd
+    Info (12022): Found design unit 1: constant_in-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/constant_in.vhd Line: 16
+    Info (12023): Found entity 1: constant_in File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/constant_in.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file data_in.vhd
+    Info (12022): Found design unit 1: data_in-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/data_in.vhd Line: 16
+    Info (12023): Found entity 1: data_in File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/data_in.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file busdivider.vhd
+    Info (12022): Found design unit 1: busDivider-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/busDivider.vhd Line: 16
+    Info (12023): Found entity 1: busDivider File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/busDivider.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file palabracontrol.vhd
+    Info (12022): Found design unit 1: PalabraControl-behavior File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/PalabraControl.vhd Line: 23
+    Info (12023): Found entity 1: PalabraControl File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/PalabraControl.vhd Line: 8
+Info (12127): Elaborating entity "CircuitoCompleto" for the top level hierarchy
+Info (12128): Elaborating entity "Protoboard" for hierarchy "Protoboard:inst6"
+Info (12128): Elaborating entity "inversor16todownto" for hierarchy "Protoboard:inst6|inversor16todownto:b2v_inst" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 152
+Info (12128): Elaborating entity "BinarioaBCD" for hierarchy "Protoboard:inst6|BinarioaBCD:b2v_inst2" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 157
+Info (12128): Elaborating entity "inversor4downtoto" for hierarchy "Protoboard:inst6|inversor4downtoto:b2v_inst3" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 169
+Info (12128): Elaborating entity "Practica2" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 201
+Info (12128): Elaborating entity "mux4a1" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 126
+Info (12128): Elaborating entity "decoBCDa7" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|decoBCDa7:b2v_inst1" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 135
+Info (12128): Elaborating entity "cont2" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|cont2:b2v_inst2" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 146
+Info (12128): Elaborating entity "div_freq" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 152
+Info (12128): Elaborating entity "deco2a4" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|deco2a4:b2v_inst4" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 160
+Info (12128): Elaborating entity "busDivider" for hierarchy "busDivider:inst10"
+Info (12128): Elaborating entity "mux2a1" for hierarchy "mux2a1:inst3"
+Info (12128): Elaborating entity "PalabraControl" for hierarchy "PalabraControl:inst12"
+Info (12128): Elaborating entity "inversor16downtoto" for hierarchy "inversor16downtoto:inst9"
+Info (12128): Elaborating entity "Practica5" for hierarchy "Practica5:inst"
+Warning (10036): Verilog HDL or VHDL warning at Practica5.vhd(34): object "cte" assigned a value but never read File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica5/Practica5.vhd Line: 34
+Info (12128): Elaborating entity "inversor16todownto" for hierarchy "inversor16todownto:inst7"
+Info (12128): Elaborating entity "Practica4" for hierarchy "Practica4:inst2"
+Info (12128): Elaborating entity "SDivider" for hierarchy "Practica4:inst2|SDivider:b2v_inst" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 112
+Info (12128): Elaborating entity "FirstBit" for hierarchy "Practica4:inst2|FirstBit:b2v_inst1" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 121
+Info (12128): Elaborating entity "CircuitoAritmetico" for hierarchy "Practica4:inst2|CircuitoAritmetico:b2v_inst2" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 126
+Warning (10541): VHDL Signal Declaration warning at CircuitoAritmetico.vhd(15): used implicit default value for signal "COUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 15
+Info (12128): Elaborating entity "CircuitoLogico" for hierarchy "Practica4:inst2|CircuitoLogico:b2v_inst3" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 135
+Info (12128): Elaborating entity "Shifter" for hierarchy "Practica4:inst2|Shifter:b2v_inst6" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 156
+Info (12128): Elaborating entity "ZeroDetect" for hierarchy "Practica4:inst2|ZeroDetect:b2v_inst8" File: C:/Users/joceg/OneDrive - INSTITUTO TECNOLOGICO AUTONOMO DE MEXICO/Escuela/Tareas/Circuitos lógicos/Laboratorio/CircuitoCompleto/Practica4/Practica4.vhd Line: 165
+Info (12128): Elaborating entity "data_in" for hierarchy "data_in:inst5"
+Info (12128): Elaborating entity "constant_in" for hierarchy "constant_in:inst1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "carry" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 814 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 158 output pins
+    Info (21061): Implemented 639 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Sun Nov 22 11:32:21 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:43
+
+

@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity deco2a4 is
+	port(
+			S: in std_logic_vector(0 to 1);
+			D0: out std_logic;
+			D1: out std_logic;
+			D2: out std_logic;
+			D3: out std_logic);
+end deco2a4;
+
+architecture behavior of deco2a4 is
+	begin
+			D0 <= not(S(0)) and not(S(1));
+			D1 <= not(S(0)) and S(1);
+			D2 <= S(0) and not(S(1));
+			D3 <= S(0) and S(1);
+end behavior;

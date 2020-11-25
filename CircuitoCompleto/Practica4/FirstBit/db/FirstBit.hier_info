@@ -1,0 +1,20 @@
+|FirstBit
+A[15] => ~NO_FANOUT~
+A[14] => ~NO_FANOUT~
+A[13] => ~NO_FANOUT~
+A[12] => ~NO_FANOUT~
+A[11] => ~NO_FANOUT~
+A[10] => ~NO_FANOUT~
+A[9] => ~NO_FANOUT~
+A[8] => ~NO_FANOUT~
+A[7] => ~NO_FANOUT~
+A[6] => ~NO_FANOUT~
+A[5] => ~NO_FANOUT~
+A[4] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[0] => N.DATAIN
+N <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

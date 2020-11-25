@@ -1,0 +1,26 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity Shifter is
+
+	port(		
+				S : in std_logic_vector(0 to 1);
+				B : in std_logic_vector(0 to 15);
+				G : out std_logic_vector(0 to 15));
+	
+end Shifter;
+
+
+architecture behavior of Shifter is
+
+	begin
+			with S select
+						G <=  B when "00",
+								shift_right(B, 1) when "01",
+								shift_left(B, 1) when "10",
+								B when "11";
+								
+end behavior;

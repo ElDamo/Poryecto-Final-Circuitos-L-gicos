@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sdownto[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sdownto[15]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[15]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[14]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[13]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[12]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[11]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[10]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[9]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[8]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[7]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[6]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[5]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[4]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[3]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "eto[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

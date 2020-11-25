@@ -1,0 +1,11 @@
+|inversor4downtoto
+edownto[0] => sto[3].DATAIN
+edownto[1] => sto[2].DATAIN
+edownto[2] => sto[1].DATAIN
+edownto[3] => sto[0].DATAIN
+sto[3] <= edownto[0].DB_MAX_OUTPUT_PORT_TYPE
+sto[2] <= edownto[1].DB_MAX_OUTPUT_PORT_TYPE
+sto[1] <= edownto[2].DB_MAX_OUTPUT_PORT_TYPE
+sto[0] <= edownto[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

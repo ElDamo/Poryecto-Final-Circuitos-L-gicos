@@ -1,0 +1,9 @@
+|cont2
+Clock => temp[1].CLK
+Clock => temp[0].CLK
+Reset => temp[1].ACLR
+Reset => temp[0].ACLR
+D[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+D[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
