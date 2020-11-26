@@ -29,6 +29,7 @@ entity ProgramCounter is
 		memory_bank_address : out std_logic_vector(15 downto 0) := X"0000";
 		memory_bank_write : out std_logic := '0';
 		memory_out : out std_logic_vector(15 downto 0) --se usa para escribir en registros de propósito general
+		
 	
 	);
 	
@@ -57,6 +58,7 @@ DR <= instruccion(8 downto 6);
 										when "101" => memory_out <= (memory5 + instruccion(2 downto 0));
 										when "110" => memory_out <= (memory6 + instruccion(2 downto 0));
 										when "111" => memory_out <= (memory7 + instruccion(2 downto 0));
+										when others => memory_out <= x"0000";
 					end case;
 					--contador_aux <= contador_aux + 1;
 				elsif instruccion(11) = '1' then --sabemos que es load immediate
@@ -76,6 +78,7 @@ DR <= instruccion(8 downto 6);
 										when "101" => memory_bank_data <= memory5;
 										when "110" => memory_bank_data <= memory6;
 										when "111" => memory_bank_data <= memory7;
+										when others => memory_bank_data <= x"0000";
 					end case;
 					case instruccion(5 downto 3) is
 										when "000" => memory_bank_address <= memory0;
@@ -86,6 +89,7 @@ DR <= instruccion(8 downto 6);
 										when "101" => memory_bank_address <= memory5;
 										when "110" => memory_bank_address <= memory6;
 										when "111" => memory_bank_address <= memory7;
+										when others => memory_bank_address <= x"0000";
 					end case;
 					--contador_aux <= contador_aux + 1;
 					
@@ -101,6 +105,7 @@ DR <= instruccion(8 downto 6);
 										when "101" => memory_bank_address <= memory5;
 										when "110" => memory_bank_address <= memory6;
 										when "111" => memory_bank_address <= memory7;
+										when others => memory_bank_address <= x"0000";
 					end case;
 					--contador_aux <= contador_aux + 1;
 					

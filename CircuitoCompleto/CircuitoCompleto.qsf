@@ -49,6 +49,11 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE ../InstructionQueue/InstructionQueue.vhd
+set_global_assignment -name VHDL_FILE ../ProgramCounter/ProgramCounter.vhd
 set_global_assignment -name VHDL_FILE Practica4/Practica4.vhd
 set_global_assignment -name VHDL_FILE Protoboard/Practica2/mux4a1/mux4a1.vhd
 set_global_assignment -name VHDL_FILE Protoboard/Practica2/div_freq/div_freq.vhd
@@ -69,9 +74,6 @@ set_global_assignment -name VHDL_FILE Practica4/FirstBit/FirstBit.vhd
 set_global_assignment -name VHDL_FILE Practica4/CircuitoLogico/CircuitoLogico.vhd
 set_global_assignment -name VHDL_FILE Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd
 set_global_assignment -name BDF_FILE CircuitoCompleto.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE inversor16downtoto.vhd
 set_global_assignment -name VHDL_FILE constant_in.vhd
 set_global_assignment -name VHDL_FILE data_in.vhd

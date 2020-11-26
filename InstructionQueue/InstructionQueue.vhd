@@ -13,6 +13,9 @@ entity InstructionQueue is
 				address : in std_logic_vector(15 downto 0);
 				data_in : in std_logic_vector(15 downto 0);
 				data_out : out std_logic_vector(15 downto 0);
+				BA: out std_logic_vector(2 downto 0);
+				AA: out std_logic_vector(2 downto 0);
+				DA: out std_logic_vector(2 downto 0);
 				MB: out std_logic;
 				FS: out std_logic_vector(3 downto 0);
 				MD: out std_logic;

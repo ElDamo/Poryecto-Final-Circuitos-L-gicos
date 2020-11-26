@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProgramCounter
-Sat Nov 21 15:59:31 2020
+Wed Nov 25 19:03:14 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 21 15:59:31 2020       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 25 19:03:14 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ProgramCounter                              ;
 ; Top-level Entity Name              ; ProgramCounter                              ;
@@ -293,12 +293,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Nov 21 15:59:04 2020
+    Info: Processing started: Wed Nov 25 19:02:45 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProgramCounter -c ProgramCounter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file programcounter.vhd
-    Info (12022): Found design unit 1: ProgramCounter-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd Line: 37
+    Info (12022): Found design unit 1: ProgramCounter-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd Line: 38
     Info (12023): Found entity 1: ProgramCounter File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd Line: 8
 Info (12127): Elaborating entity "ProgramCounter" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
@@ -313,8 +313,8 @@ Info (21057): Implemented 498 device resources after synthesis - the final resou
     Info (21061): Implemented 250 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Sat Nov 21 15:59:31 2020
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Processing ended: Wed Nov 25 19:03:14 2020
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:52
 
 
