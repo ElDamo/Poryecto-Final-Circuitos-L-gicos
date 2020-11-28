@@ -54,10 +54,13 @@ data_out<=aux;
 MB<= aux(15);
 FS<= aux(12 downto 10) & (aux(9) and not(aux(15) and aux(14)));
 MD<= aux(13);
-RW<= not(aux(12));
+RW<= not(aux(14));
 MW<= (aux(14) and not(aux(15)));
 PL<= (aux(15) and aux(14));
 JB<= aux(13);
 BC<= aux(9);
+BA<= aux(2 downto 0);
+AA<= aux(5 downto 3);
+DA<= aux(8 downto 6);
 	
 end behavior;

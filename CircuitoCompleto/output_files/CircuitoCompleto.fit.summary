@@ -1,16 +1,16 @@
-Fitter Status : Successful - Fri Nov 27 09:01:47 2020
+Fitter Status : Successful - Sat Nov 28 14:20:12 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : CircuitoCompleto
 Top-level Entity Name : CircuitoCompleto
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 172 / 22,320 ( < 1 % )
-    Total combinational functions : 149 / 22,320 ( < 1 % )
-    Dedicated logic registers : 102 / 22,320 ( < 1 % )
-Total registers : 102
+Total logic elements : 5,868 / 22,320 ( 26 % )
+    Total combinational functions : 3,596 / 22,320 ( 16 % )
+    Dedicated logic registers : 4,347 / 22,320 ( 19 % )
+Total registers : 4347
 Total pins : 48 / 154 ( 31 % )
 Total virtual pins : 0
-Total memory bits : 3,328 / 608,256 ( < 1 % )
+Total memory bits : 4,096 / 608,256 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
