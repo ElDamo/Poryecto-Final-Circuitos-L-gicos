@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sat Nov 28 14:18:20 2020
+Analysis & Synthesis Status : Successful - Sun Nov 29 16:38:59 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : CircuitoCompleto
 Top-level Entity Name : CircuitoCompleto
 Family : Cyclone IV E
-Total logic elements : 7,839
-    Total combinational functions : 3,596
-    Dedicated logic registers : 4,347
-Total registers : 4347
-Total pins : 48
+Total logic elements : 14,784
+    Total combinational functions : 6,618
+    Dedicated logic registers : 8,410
+Total registers : 8410
+Total pins : 33
 Total virtual pins : 0
-Total memory bits : 4,096
+Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

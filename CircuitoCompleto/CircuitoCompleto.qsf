@@ -52,6 +52,40 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_K16 -to D0
+set_location_assignment PIN_L15 -to D1
+set_location_assignment PIN_P16 -to D2
+set_location_assignment PIN_N16 -to D3
+set_location_assignment PIN_F13 -to A
+set_location_assignment PIN_T15 -to B
+set_location_assignment PIN_T13 -to C
+set_location_assignment PIN_T12 -to D
+set_location_assignment PIN_T11 -to E
+set_location_assignment PIN_R11 -to F
+set_location_assignment PIN_R10 -to G
+set_location_assignment PIN_A11 -to Z
+set_location_assignment PIN_B13 -to N
+set_location_assignment PIN_A13 -to carry
+set_location_assignment PIN_R8 -to CLK
+set_location_assignment PIN_J15 -to clock
+set_location_assignment PIN_D3 -to Seleccion[15]
+set_location_assignment PIN_C3 -to Seleccion[14]
+set_location_assignment PIN_A2 -to Seleccion[13]
+set_location_assignment PIN_A3 -to Seleccion[12]
+set_location_assignment PIN_A4 -to Seleccion[11]
+set_location_assignment PIN_B5 -to Seleccion[10]
+set_location_assignment PIN_A5 -to Seleccion[9]
+set_location_assignment PIN_D5 -to Seleccion[8]
+set_location_assignment PIN_B7 -to Seleccion[7]
+set_location_assignment PIN_D6 -to Seleccion[6]
+set_location_assignment PIN_A7 -to Seleccion[5]
+set_location_assignment PIN_C6 -to Seleccion[4]
+set_location_assignment PIN_E7 -to Seleccion[3]
+set_location_assignment PIN_E8 -to Seleccion[2]
+set_location_assignment PIN_D8 -to Seleccion[1]
+set_location_assignment PIN_E1 -to WriteIns
+set_location_assignment PIN_F8 -to Seleccion[0]
+set_global_assignment -name VHDL_FILE ../IR_Counter.vhd
 set_global_assignment -name VHDL_FILE ../MemoryBank/MemoryBank.vhd
 set_global_assignment -name VHDL_FILE ../DataMemory/DataMemory.vhd
 set_global_assignment -name VHDL_FILE ../InstructionQueue/InstructionQueue.vhd

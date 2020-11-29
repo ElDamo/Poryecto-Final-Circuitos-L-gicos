@@ -1,5 +1,5 @@
 Flow report for CircuitoCompleto
-Sat Nov 28 14:20:30 2020
+Sun Nov 29 16:45:13 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 28 14:20:18 2020       ;
+; Flow Status                        ; Successful - Sun Nov 29 16:44:21 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; CircuitoCompleto                            ;
 ; Top-level Entity Name              ; CircuitoCompleto                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 5,868 / 22,320 ( 26 % )                     ;
-;     Total combinational functions  ; 3,596 / 22,320 ( 16 % )                     ;
-;     Dedicated logic registers      ; 4,347 / 22,320 ( 19 % )                     ;
-; Total registers                    ; 4347                                        ;
-; Total pins                         ; 48 / 154 ( 31 % )                           ;
+; Total logic elements               ; 10,720 / 22,320 ( 48 % )                    ;
+;     Total combinational functions  ; 6,618 / 22,320 ( 30 % )                     ;
+;     Dedicated logic registers      ; 8,410 / 22,320 ( 38 % )                     ;
+; Total registers                    ; 8410                                        ;
+; Total pins                         ; 33 / 154 ( 21 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 4,096 / 608,256 ( < 1 % )                   ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/28/2020 14:17:38 ;
+; Start date & time ; 11/29/2020 16:37:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CircuitoCompleto    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 48710636535874.160659465707760         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 93094400418476.160668945137800         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -93,11 +93,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:41     ; 1.0                     ; 4847 MB             ; 00:00:59                           ;
-; Fitter               ; 00:01:50     ; 1.1                     ; 5637 MB             ; 00:02:19                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4691 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:09     ; 2.1                     ; 4894 MB             ; 00:00:11                           ;
-; Total                ; 00:02:42     ; --                      ; --                  ; 00:03:31                           ;
+; Analysis & Synthesis ; 00:01:27     ; 1.0                     ; 4846 MB             ; 00:01:48                           ;
+; Fitter               ; 00:05:12     ; 1.0                     ; 5356 MB             ; 00:06:00                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4720 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:50     ; 1.8                     ; 4968 MB             ; 00:01:02                           ;
+; Total                ; 00:07:32     ; --                      ; --                  ; 00:08:53                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +106,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-GNP5O6N  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-GNP5O6N  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-GNP5O6N  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-GNP5O6N  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-MJS9IHU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-MJS9IHU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-MJS9IHU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-MJS9IHU  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

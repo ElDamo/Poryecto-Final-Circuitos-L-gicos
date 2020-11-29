@@ -1,0 +1,18 @@
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity InstructionCounter is
+	port(
+				Instr_address: in std_logic_vector(15 downto 0);
+				Next_Instr_address: out std_logic_vector(15 downto 0)
+				
+	);
+				
+end InstructionCounter;
+
+architecture behavior of InstructionCounter is
+
+begin
+	Next_Instr_address<=Instr_address+'1';
+	
+end behavior;

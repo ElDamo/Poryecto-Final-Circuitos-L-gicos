@@ -28,7 +28,7 @@ signal contador_aux : std_logic_vector(15 downto 0) := X"0000";
 begin
 
 
-	process(instruccion)
+	process(clk,instruccion)
 		begin
 		if (clk'event and clk = '1') then
 			

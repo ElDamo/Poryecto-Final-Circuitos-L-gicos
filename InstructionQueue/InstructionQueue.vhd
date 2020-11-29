@@ -29,16 +29,61 @@ entity InstructionQueue is
 end InstructionQueue;
 
 architecture behavior of InstructionQueue is
-signal aux: std_logic_vector(15 downto 0);
+signal aux:std_logic_vector(15 downto 0);
 type memory is array (255 downto 0) of std_logic_vector(15 downto 0);
-signal ins : memory := (others => "0000000000000000");
+signal ins : memory := (0 => "1001100000000000",
+								1 => "1000010000000000",
+								2 => "0001110000000000",
+								3 => "0001110000000000",
+								4 => "0001110000000000",
+								5 => "0001110001000000",
+								6 => "0000010010000001",
+								7 => "0001010011000001",
+								8 => "0001001100010011",
+								9 => "0001110101000011",
+								10=> "0001011110011000",
+								11=> "0000101111011001", 
+								12=> "0101100000000000", --Mostrar contenido registros
+								13=> "0101100000000001",
+								14=> "0101100000000010",
+								15=> "0101100000000011",
+								16=> "0101100000000100",
+								17=> "0101100000000101",
+								18=> "0101100000000110",
+								19=> "0101100000000111",
+								20=> "0100000000011110", --Guardo en la memoria con dirección r3, el dato en r6
+								21=> "0101100000000010", --Muestro R2
+								22=> "0010000010011000", --Cargo en R2 el dato guardado en memoria
+								23=> "0101100000000010", --Muestro R2
+								24=> "1100001001110111", --branch negativo al 39, si el registro en R6 es negativo
+								25=> "0000000000000000",
+								26=> "0000000000000000",
+								27=> "0000000000000000",
+								28=> "0000000000000000",
+								29=> "0000000000000000",
+								30=> "0000000000000000", 
+								31=> "0000000000000000",
+								32=> "0000000000000000",
+								33=> "0000000000000000",
+								34=> "0000000000000000",
+								35=> "0000000000000000",
+								36=> "0000000000000000",
+								37=> "0000000000000000",
+								38=> "0000000000000000",
+								39=> "0101100000000001", --Muestro registro 1
+								40=> "0101100000000000",
+								41=> "0100000000000001", --El dato en 1 lo guardo en la memoria con la dirección del dato en 0
+								42=> "0010000111000000", --Cargo en el registro 7 el dato guardado en memoria
+								43=> "1001100000000000", --Cargo con la constante el registro 0
+								44=> "0101100000000111", --Muestro el registro 7
+								45=> "0101100000000000", --Muestro el registro 0
+ 								others => "0000000000000000");
 
 begin
-
-	process(clk)
+	process(write_on)
 	begin
 		
-		if (clk'event and clk = '1') then
+		if (write_on'event and write_on = '1') then
 			if reset = '1' then
 				ins <= (others => "0000000000000000");
 			elsif write_on = '1' then
@@ -47,20 +92,25 @@ begin
 		end if;
 	end process;
 	
-aux <= ins(to_integer(unsigned(address)));
+	process(address)
+	begin
+		
+		aux <= ins(to_integer(unsigned(address)));
 
-data_out<=aux;
+		data_out<=aux;
 
-MB<= aux(15);
-FS<= aux(12 downto 10) & (aux(9) and not(aux(15) and aux(14)));
-MD<= aux(13);
-RW<= not(aux(14));
-MW<= (aux(14) and not(aux(15)));
-PL<= (aux(15) and aux(14));
-JB<= aux(13);
-BC<= aux(9);
-BA<= aux(2 downto 0);
-AA<= aux(5 downto 3);
-DA<= aux(8 downto 6);
+		MB<= aux(15);
+		FS<= aux(12 downto 10) & (aux(9) and not(aux(15) and aux(14)));
+		MD<= aux(13);
+		RW<= not(aux(14));
+		MW<= (aux(14) and not(aux(15)));
+		PL<= (aux(15) and aux(14));
+		JB<= aux(13);
+		BC<= aux(9);
+		BA<= aux(2 downto 0);
+		AA<= aux(5 downto 3);
+		DA<= aux(8 downto 6);
+	
+	end process;
 	
 end behavior;
