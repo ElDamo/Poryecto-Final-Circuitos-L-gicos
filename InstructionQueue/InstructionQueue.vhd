@@ -6,12 +6,14 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity InstructionQueue is
-	port(
+port(
 				clk : in std_logic;
 				reset : in std_logic;
 				write_on : in std_logic;
 				address : in std_logic_vector(15 downto 0);
+				Next_Instr_address: in std_logic_vector(15 downto 0);
 				data_in : in std_logic_vector(15 downto 0);
+				Instr_address: out std_logic_vector(15 downto 0);
 				data_out : out std_logic_vector(15 downto 0);
 				BA: out std_logic_vector(2 downto 0);
 				AA: out std_logic_vector(2 downto 0);
@@ -29,10 +31,11 @@ entity InstructionQueue is
 end InstructionQueue;
 
 architecture behavior of InstructionQueue is
+signal count: std_logic_vector(15 downto 0):="0000000000001000";
 signal aux:std_logic_vector(15 downto 0);
 type memory is array (255 downto 0) of std_logic_vector(15 downto 0);
-signal ins : memory := (0 => "1001100000000000",
-								1 => "1000010000000000",
+signal ins : memory := (0 => "1001100000000111",
+								1 => "1000010000000111",
 								2 => "0001110000000000",
 								3 => "0001110000000000",
 								4 => "0001110000000000",
@@ -77,6 +80,8 @@ signal ins : memory := (0 => "1001100000000000",
 								43=> "1001100000000000", --Cargo con la constante el registro 0
 								44=> "0101100000000111", --Muestro el registro 7
 								45=> "0101100000000000", --Muestro el registro 0
+								46=> "1000010111111010", --Add immediate
+								47=> "0101100000000111",
  								others => "0000000000000000");
 
 begin
@@ -87,7 +92,8 @@ begin
 			if reset = '1' then
 				ins <= (others => "0000000000000000");
 			elsif write_on = '1' then
-				ins(to_integer(unsigned(address))) <= data_in;
+				count<=Next_Instr_address;
+				ins(to_integer(unsigned(count))) <= data_in;
 			end if;
 		end if;
 	end process;
@@ -112,5 +118,6 @@ begin
 		DA<= aux(8 downto 6);
 	
 	end process;
+Instr_address<=count;
 	
 end behavior;

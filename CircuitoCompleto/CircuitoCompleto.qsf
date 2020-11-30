@@ -85,7 +85,7 @@ set_location_assignment PIN_E8 -to Seleccion[2]
 set_location_assignment PIN_D8 -to Seleccion[1]
 set_location_assignment PIN_E1 -to WriteIns
 set_location_assignment PIN_F8 -to Seleccion[0]
-set_global_assignment -name VHDL_FILE ../IR_Counter.vhd
+set_global_assignment -name VHDL_FILE ../IR_Counter/IR_Counter.vhd
 set_global_assignment -name VHDL_FILE ../MemoryBank/MemoryBank.vhd
 set_global_assignment -name VHDL_FILE ../DataMemory/DataMemory.vhd
 set_global_assignment -name VHDL_FILE ../InstructionQueue/InstructionQueue.vhd

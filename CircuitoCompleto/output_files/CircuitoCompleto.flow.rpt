@@ -1,5 +1,5 @@
 Flow report for CircuitoCompleto
-Sun Nov 29 16:45:13 2020
+Mon Nov 30 17:19:43 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 29 16:44:21 2020       ;
+; Flow Status                        ; Successful - Mon Nov 30 17:18:54 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; CircuitoCompleto                            ;
 ; Top-level Entity Name              ; CircuitoCompleto                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 10,720 / 22,320 ( 48 % )                    ;
-;     Total combinational functions  ; 6,618 / 22,320 ( 30 % )                     ;
-;     Dedicated logic registers      ; 8,410 / 22,320 ( 38 % )                     ;
-; Total registers                    ; 8410                                        ;
+; Total logic elements               ; 10,885 / 22,320 ( 49 % )                    ;
+;     Total combinational functions  ; 6,638 / 22,320 ( 30 % )                     ;
+;     Dedicated logic registers      ; 8,418 / 22,320 ( 38 % )                     ;
+; Total registers                    ; 8418                                        ;
 ; Total pins                         ; 33 / 154 ( 21 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/29/2020 16:37:32 ;
+; Start date & time ; 11/30/2020 17:08:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CircuitoCompleto    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 93094400418476.160668945137800         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 93094400418476.160677771930528         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -93,11 +93,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:27     ; 1.0                     ; 4846 MB             ; 00:01:48                           ;
-; Fitter               ; 00:05:12     ; 1.0                     ; 5356 MB             ; 00:06:00                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4720 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:50     ; 1.8                     ; 4968 MB             ; 00:01:02                           ;
-; Total                ; 00:07:32     ; --                      ; --                  ; 00:08:53                           ;
+; Analysis & Synthesis ; 00:01:44     ; 1.0                     ; 4854 MB             ; 00:01:59                           ;
+; Fitter               ; 00:08:18     ; 1.0                     ; 5365 MB             ; 00:09:06                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4716 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:47     ; 1.8                     ; 4958 MB             ; 00:01:00                           ;
+; Total                ; 00:10:53     ; --                      ; --                  ; 00:12:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CircuitoCompleto
-Sun Nov 29 16:38:59 2020
+Mon Nov 30 17:10:24 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -51,15 +51,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 29 16:38:59 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 30 17:10:24 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; CircuitoCompleto                            ;
 ; Top-level Entity Name              ; CircuitoCompleto                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 14,784                                      ;
-;     Total combinational functions  ; 6,618                                       ;
-;     Dedicated logic registers      ; 8,410                                       ;
-; Total registers                    ; 8410                                        ;
+; Total logic elements               ; 14,782                                      ;
+;     Total combinational functions  ; 6,638                                       ;
+;     Dedicated logic registers      ; 8,418                                       ;
+; Total registers                    ; 8418                                        ;
 ; Total pins                         ; 33                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -171,38 +171,39 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                       ;
-+------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                     ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                                         ; Library ;
-+------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../MemoryBank/MemoryBank.vhd                         ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/MemoryBank/MemoryBank.vhd                                             ;         ;
-; ../InstructionQueue/InstructionQueue.vhd             ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd                                 ;         ;
-; ../ProgramCounter/ProgramCounter.vhd                 ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd                                     ;         ;
-; Practica4/Practica4.vhd                              ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd                              ;         ;
-; Protoboard/Practica2/mux4a1/mux4a1.vhd               ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd               ;         ;
-; Protoboard/Practica2/div_freq/div_freq.vhd           ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd           ;         ;
-; Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd         ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd         ;         ;
-; Protoboard/Practica2/deco2a4/deco2a4.vhd             ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd             ;         ;
-; Protoboard/Practica2/cont2/cont2.vhd                 ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd                 ;         ;
-; Protoboard/Practica2/Practica2.vhd                   ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd                   ;         ;
-; Protoboard/inversor16todownto/inversor16todownto.vhd ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd ;         ;
-; Protoboard/inversor4downtoto/inversor4downtoto.vhd   ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd   ;         ;
-; Protoboard/BinarioaBCD/BinarioaBCD.vhd               ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd               ;         ;
-; Protoboard/Protoboard.vhd                            ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd                            ;         ;
-; Practica5/Practica5.vhd                              ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd                              ;         ;
-; Practica4/ZeroDetect/ZeroDetect.vhd                  ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd                  ;         ;
-; Practica4/Shifter/Shifter.vhd                        ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Shifter/Shifter.vhd                        ;         ;
-; Practica4/SDivider/SDivider.vhd                      ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/SDivider/SDivider.vhd                      ;         ;
-; Practica4/mux2a1/mux2a1.vhd                          ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd                          ;         ;
-; Practica4/FirstBit/FirstBit.vhd                      ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd                      ;         ;
-; Practica4/CircuitoLogico/CircuitoLogico.vhd          ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd          ;         ;
-; Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd  ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd  ;         ;
-; CircuitoCompleto.bdf                                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/CircuitoCompleto.bdf                                 ;         ;
-; inversor16downtoto.vhd                               ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/inversor16downtoto.vhd                               ;         ;
-; constant_in.vhd                                      ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/constant_in.vhd                                      ;         ;
-; busDivider.vhd                                       ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/busDivider.vhd                                       ;         ;
-+------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                    ;
++------------------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                                      ; Library ;
++------------------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../IR_Counter/IR_Counter.vhd                         ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/IR_Counter/IR_Counter.vhd                                             ;         ;
+; ../MemoryBank/MemoryBank.vhd                         ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/MemoryBank/MemoryBank.vhd                                             ;         ;
+; ../InstructionQueue/InstructionQueue.vhd             ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd                                 ;         ;
+; ../ProgramCounter/ProgramCounter.vhd                 ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd                                     ;         ;
+; Practica4/Practica4.vhd                              ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd                              ;         ;
+; Protoboard/Practica2/mux4a1/mux4a1.vhd               ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd               ;         ;
+; Protoboard/Practica2/div_freq/div_freq.vhd           ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd           ;         ;
+; Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd         ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd         ;         ;
+; Protoboard/Practica2/deco2a4/deco2a4.vhd             ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd             ;         ;
+; Protoboard/Practica2/cont2/cont2.vhd                 ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd                 ;         ;
+; Protoboard/Practica2/Practica2.vhd                   ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd                   ;         ;
+; Protoboard/inversor16todownto/inversor16todownto.vhd ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd ;         ;
+; Protoboard/inversor4downtoto/inversor4downtoto.vhd   ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd   ;         ;
+; Protoboard/BinarioaBCD/BinarioaBCD.vhd               ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd               ;         ;
+; Protoboard/Protoboard.vhd                            ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd                            ;         ;
+; Practica5/Practica5.vhd                              ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd                              ;         ;
+; Practica4/ZeroDetect/ZeroDetect.vhd                  ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd                  ;         ;
+; Practica4/Shifter/Shifter.vhd                        ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Shifter/Shifter.vhd                        ;         ;
+; Practica4/SDivider/SDivider.vhd                      ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/SDivider/SDivider.vhd                      ;         ;
+; Practica4/mux2a1/mux2a1.vhd                          ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd                          ;         ;
+; Practica4/FirstBit/FirstBit.vhd                      ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd                      ;         ;
+; Practica4/CircuitoLogico/CircuitoLogico.vhd          ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd          ;         ;
+; Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd  ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd  ;         ;
+; CircuitoCompleto.bdf                                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/CircuitoCompleto.bdf                                 ;         ;
+; inversor16downtoto.vhd                               ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/inversor16downtoto.vhd                               ;         ;
+; constant_in.vhd                                      ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/constant_in.vhd                                      ;         ;
+; busDivider.vhd                                       ; yes             ; User VHDL File                     ; C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/busDivider.vhd                                       ;         ;
++------------------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -210,20 +211,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 14,784      ;
+; Estimated Total logic elements              ; 14,782      ;
 ;                                             ;             ;
-; Total combinational functions               ; 6618        ;
+; Total combinational functions               ; 6638        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 5806        ;
-;     -- 3 input functions                    ; 371         ;
-;     -- <=2 input functions                  ; 441         ;
+;     -- 4 input functions                    ; 5786        ;
+;     -- 3 input functions                    ; 381         ;
+;     -- <=2 input functions                  ; 471         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 6568        ;
-;     -- arithmetic mode                      ; 50          ;
+;     -- normal mode                          ; 6582        ;
+;     -- arithmetic mode                      ; 56          ;
 ;                                             ;             ;
-; Total registers                             ; 8410        ;
-;     -- Dedicated logic registers            ; 8410        ;
+; Total registers                             ; 8418        ;
+;     -- Dedicated logic registers            ; 8418        ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 33          ;
@@ -242,27 +243,28 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Entity Name        ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------------+--------------+
-; |CircuitoCompleto                    ; 6618 (0)            ; 8410 (0)                  ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |CircuitoCompleto                                                          ; CircuitoCompleto   ; work         ;
-;    |InstructionQueue:inst20|         ; 3154 (3154)         ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|InstructionQueue:inst20                                  ; InstructionQueue   ; work         ;
-;    |MemoryBank:inst15|               ; 280 (280)           ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|MemoryBank:inst15                                        ; MemoryBank         ; work         ;
-;    |Practica4:inst2|                 ; 116 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2                                          ; Practica4          ; work         ;
-;       |CircuitoAritmetico:b2v_inst2| ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|CircuitoAritmetico:b2v_inst2             ; CircuitoAritmetico ; work         ;
+; |CircuitoCompleto                    ; 6638 (0)            ; 8418 (0)                  ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |CircuitoCompleto                                                          ; CircuitoCompleto   ; work         ;
+;    |IR_Counter:inst19|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|IR_Counter:inst19                                        ; IR_Counter         ; work         ;
+;    |InstructionQueue:inst22|         ; 3177 (3177)         ; 4104 (4104)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|InstructionQueue:inst22                                  ; InstructionQueue   ; work         ;
+;    |MemoryBank:inst15|               ; 2996 (2996)         ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|MemoryBank:inst15                                        ; MemoryBank         ; work         ;
+;    |Practica4:inst2|                 ; 108 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2                                          ; Practica4          ; work         ;
+;       |CircuitoAritmetico:b2v_inst2| ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|CircuitoAritmetico:b2v_inst2             ; CircuitoAritmetico ; work         ;
 ;       |CircuitoLogico:b2v_inst3|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|CircuitoLogico:b2v_inst3                 ; CircuitoLogico     ; work         ;
 ;       |Shifter:b2v_inst6|            ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|Shifter:b2v_inst6                        ; Shifter            ; work         ;
-;       |ZeroDetect:b2v_inst8|         ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|ZeroDetect:b2v_inst8                     ; ZeroDetect         ; work         ;
+;       |ZeroDetect:b2v_inst8|         ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|ZeroDetect:b2v_inst8                     ; ZeroDetect         ; work         ;
 ;       |mux2a1:b2v_inst5|             ; 49 (49)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica4:inst2|mux2a1:b2v_inst5                         ; mux2a1             ; work         ;
-;    |Practica5:inst|                  ; 146 (146)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica5:inst                                           ; Practica5          ; work         ;
+;    |Practica5:inst|                  ; 151 (151)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Practica5:inst                                           ; Practica5          ; work         ;
 ;    |ProgramCounter:inst13|           ; 32 (32)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|ProgramCounter:inst13                                    ; ProgramCounter     ; work         ;
-;    |Protoboard:inst6|                ; 117 (0)             ; 76 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6                                         ; Protoboard         ; work         ;
-;       |BinarioaBCD:b2v_inst2|        ; 66 (66)             ; 56 (56)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2                   ; BinarioaBCD        ; work         ;
+;    |Protoboard:inst6|                ; 127 (0)             ; 76 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6                                         ; Protoboard         ; work         ;
+;       |BinarioaBCD:b2v_inst2|        ; 76 (76)             ; 56 (56)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2                   ; BinarioaBCD        ; work         ;
 ;       |Practica2:b2v_inst7|          ; 51 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7                     ; Practica2          ; work         ;
 ;          |cont2:b2v_inst2|           ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|cont2:b2v_inst2     ; cont2              ; work         ;
 ;          |deco2a4:b2v_inst4|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|deco2a4:b2v_inst4   ; deco2a4            ; work         ;
 ;          |decoBCDa7:b2v_inst1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|decoBCDa7:b2v_inst1 ; decoBCDa7          ; work         ;
 ;          |div_freq:b2v_inst3|        ; 30 (30)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3  ; div_freq           ; work         ;
 ;          |mux4a1:b2v_inst|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst     ; mux4a1             ; work         ;
-;    |mux2a1:inst3|                    ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|mux2a1:inst3                                             ; mux2a1             ; work         ;
-;    |mux2a1:inst4|                    ; 2740 (2740)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|mux2a1:inst4                                             ; mux2a1             ; work         ;
+;    |mux2a1:inst3|                    ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|mux2a1:inst3                                             ; mux2a1             ; work         ;
+;    |mux2a1:inst4|                    ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CircuitoCompleto|mux2a1:inst4                                             ; mux2a1             ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -285,8 +287,9 @@ Encoding Type:  One-Hot
 ; Register name                                  ; Reason for Removal                                ;
 +------------------------------------------------+---------------------------------------------------+
 ; ProgramCounter:inst13|AD_extended[5..9,11..15] ; Merged with ProgramCounter:inst13|AD_extended[10] ;
+; InstructionQueue:inst22|count[8..15]           ; Lost fanout                                       ;
 ; ProgramCounter:inst13|contador_aux[8..15]      ; Lost fanout                                       ;
-; Total Number of Removed Registers = 18         ;                                                   ;
+; Total Number of Removed Registers = 26         ;                                                   ;
 +------------------------------------------------+---------------------------------------------------+
 
 
@@ -295,12 +298,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8410  ;
+; Total registers                              ; 8418  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 12    ;
+; Number of registers using Synchronous Load   ; 11    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8357  ;
+; Number of registers using Clock Enable       ; 8365  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -310,107 +313,107 @@ Encoding Type:  One-Hot
 +-------------------------------------------+---------+
 ; Inverted Register                         ; Fan out ;
 +-------------------------------------------+---------+
-; InstructionQueue:inst20|ins[9][10]        ; 1       ;
-; InstructionQueue:inst20|ins[5][10]        ; 1       ;
-; InstructionQueue:inst20|ins[1][10]        ; 1       ;
-; InstructionQueue:inst20|ins[6][10]        ; 1       ;
-; InstructionQueue:inst20|ins[10][10]       ; 1       ;
-; InstructionQueue:inst20|ins[2][10]        ; 1       ;
-; InstructionQueue:inst20|ins[4][10]        ; 1       ;
-; InstructionQueue:inst20|ins[7][10]        ; 1       ;
-; InstructionQueue:inst20|ins[3][10]        ; 1       ;
-; InstructionQueue:inst20|ins[9][11]        ; 1       ;
-; InstructionQueue:inst20|ins[21][11]       ; 1       ;
-; InstructionQueue:inst20|ins[5][11]        ; 1       ;
-; InstructionQueue:inst20|ins[17][11]       ; 1       ;
-; InstructionQueue:inst20|ins[45][11]       ; 1       ;
-; InstructionQueue:inst20|ins[13][11]       ; 1       ;
-; InstructionQueue:inst20|ins[18][11]       ; 1       ;
-; InstructionQueue:inst20|ins[2][11]        ; 1       ;
-; InstructionQueue:inst20|ins[14][11]       ; 1       ;
-; InstructionQueue:inst20|ins[4][11]        ; 1       ;
-; InstructionQueue:inst20|ins[40][11]       ; 1       ;
-; InstructionQueue:inst20|ins[16][11]       ; 1       ;
-; InstructionQueue:inst20|ins[0][11]        ; 1       ;
-; InstructionQueue:inst20|ins[44][11]       ; 1       ;
-; InstructionQueue:inst20|ins[12][11]       ; 1       ;
-; InstructionQueue:inst20|ins[43][11]       ; 1       ;
-; InstructionQueue:inst20|ins[11][11]       ; 1       ;
-; InstructionQueue:inst20|ins[39][11]       ; 1       ;
-; InstructionQueue:inst20|ins[23][11]       ; 1       ;
-; InstructionQueue:inst20|ins[19][11]       ; 1       ;
-; InstructionQueue:inst20|ins[3][11]        ; 1       ;
-; InstructionQueue:inst20|ins[15][11]       ; 1       ;
-; InstructionQueue:inst20|ins[39][0]        ; 1       ;
-; InstructionQueue:inst20|ins[6][0]         ; 1       ;
-; InstructionQueue:inst20|ins[7][0]         ; 1       ;
-; InstructionQueue:inst20|ins[24][0]        ; 1       ;
-; InstructionQueue:inst20|ins[41][0]        ; 1       ;
-; InstructionQueue:inst20|ins[9][0]         ; 1       ;
-; InstructionQueue:inst20|ins[8][0]         ; 1       ;
-; InstructionQueue:inst20|ins[11][0]        ; 1       ;
-; InstructionQueue:inst20|ins[17][0]        ; 1       ;
-; InstructionQueue:inst20|ins[19][0]        ; 1       ;
-; InstructionQueue:inst20|ins[13][0]        ; 1       ;
-; InstructionQueue:inst20|ins[44][0]        ; 1       ;
-; InstructionQueue:inst20|ins[15][0]        ; 1       ;
-; InstructionQueue:inst20|ins[21][1]        ; 1       ;
-; InstructionQueue:inst20|ins[18][1]        ; 1       ;
-; InstructionQueue:inst20|ins[20][1]        ; 1       ;
-; InstructionQueue:inst20|ins[24][1]        ; 1       ;
-; InstructionQueue:inst20|ins[23][1]        ; 1       ;
-; InstructionQueue:inst20|ins[19][1]        ; 1       ;
-; InstructionQueue:inst20|ins[44][1]        ; 1       ;
-; InstructionQueue:inst20|ins[14][1]        ; 1       ;
-; InstructionQueue:inst20|ins[9][1]         ; 1       ;
-; InstructionQueue:inst20|ins[8][1]         ; 1       ;
-; InstructionQueue:inst20|ins[15][1]        ; 1       ;
-; InstructionQueue:inst20|ins[17][2]        ; 1       ;
-; InstructionQueue:inst20|ins[18][2]        ; 1       ;
-; InstructionQueue:inst20|ins[24][2]        ; 1       ;
-; InstructionQueue:inst20|ins[20][2]        ; 1       ;
-; InstructionQueue:inst20|ins[16][2]        ; 1       ;
-; InstructionQueue:inst20|ins[44][2]        ; 1       ;
-; InstructionQueue:inst20|ins[19][2]        ; 1       ;
-; InstructionQueue:inst20|ins[1][15]        ; 1       ;
-; InstructionQueue:inst20|ins[24][15]       ; 1       ;
-; InstructionQueue:inst20|ins[0][15]        ; 1       ;
-; InstructionQueue:inst20|ins[43][15]       ; 1       ;
-; InstructionQueue:inst20|ins[10][3]        ; 1       ;
-; InstructionQueue:inst20|ins[22][3]        ; 1       ;
-; InstructionQueue:inst20|ins[20][3]        ; 1       ;
-; InstructionQueue:inst20|ins[11][3]        ; 1       ;
-; InstructionQueue:inst20|ins[24][4]        ; 1       ;
-; InstructionQueue:inst20|ins[10][4]        ; 1       ;
-; InstructionQueue:inst20|ins[8][4]         ; 1       ;
-; InstructionQueue:inst20|ins[11][4]        ; 1       ;
-; InstructionQueue:inst20|ins[22][4]        ; 1       ;
-; InstructionQueue:inst20|ins[20][4]        ; 1       ;
-; InstructionQueue:inst20|ins[24][5]        ; 1       ;
-; InstructionQueue:inst20|ins[40][12]       ; 1       ;
-; InstructionQueue:inst20|ins[43][12]       ; 1       ;
-; InstructionQueue:inst20|ins[39][12]       ; 1       ;
-; InstructionQueue:inst20|ins[45][12]       ; 1       ;
-; InstructionQueue:inst20|ins[44][12]       ; 1       ;
-; InstructionQueue:inst20|ins[21][12]       ; 1       ;
-; InstructionQueue:inst20|ins[17][12]       ; 1       ;
-; InstructionQueue:inst20|ins[18][12]       ; 1       ;
-; InstructionQueue:inst20|ins[16][12]       ; 1       ;
-; InstructionQueue:inst20|ins[23][12]       ; 1       ;
-; InstructionQueue:inst20|ins[19][12]       ; 1       ;
-; InstructionQueue:inst20|ins[5][12]        ; 1       ;
-; InstructionQueue:inst20|ins[4][12]        ; 1       ;
-; InstructionQueue:inst20|ins[7][12]        ; 1       ;
-; InstructionQueue:inst20|ins[9][12]        ; 1       ;
-; InstructionQueue:inst20|ins[10][12]       ; 1       ;
-; InstructionQueue:inst20|ins[8][12]        ; 1       ;
-; InstructionQueue:inst20|ins[2][12]        ; 1       ;
-; InstructionQueue:inst20|ins[0][12]        ; 1       ;
-; InstructionQueue:inst20|ins[3][12]        ; 1       ;
-; InstructionQueue:inst20|ins[14][12]       ; 1       ;
-; InstructionQueue:inst20|ins[13][12]       ; 1       ;
-; InstructionQueue:inst20|ins[12][12]       ; 1       ;
-; Total number of inverted registers = 141* ;         ;
+; InstructionQueue:inst22|ins[9][10]        ; 1       ;
+; InstructionQueue:inst22|ins[5][10]        ; 1       ;
+; InstructionQueue:inst22|ins[1][10]        ; 1       ;
+; InstructionQueue:inst22|ins[46][10]       ; 1       ;
+; InstructionQueue:inst22|ins[6][10]        ; 1       ;
+; InstructionQueue:inst22|ins[10][10]       ; 1       ;
+; InstructionQueue:inst22|ins[2][10]        ; 1       ;
+; InstructionQueue:inst22|ins[4][10]        ; 1       ;
+; InstructionQueue:inst22|ins[7][10]        ; 1       ;
+; InstructionQueue:inst22|ins[3][10]        ; 1       ;
+; InstructionQueue:inst22|ins[9][11]        ; 1       ;
+; InstructionQueue:inst22|ins[21][11]       ; 1       ;
+; InstructionQueue:inst22|ins[5][11]        ; 1       ;
+; InstructionQueue:inst22|ins[17][11]       ; 1       ;
+; InstructionQueue:inst22|ins[45][11]       ; 1       ;
+; InstructionQueue:inst22|ins[13][11]       ; 1       ;
+; InstructionQueue:inst22|ins[18][11]       ; 1       ;
+; InstructionQueue:inst22|ins[2][11]        ; 1       ;
+; InstructionQueue:inst22|ins[14][11]       ; 1       ;
+; InstructionQueue:inst22|ins[4][11]        ; 1       ;
+; InstructionQueue:inst22|ins[40][11]       ; 1       ;
+; InstructionQueue:inst22|ins[16][11]       ; 1       ;
+; InstructionQueue:inst22|ins[0][11]        ; 1       ;
+; InstructionQueue:inst22|ins[44][11]       ; 1       ;
+; InstructionQueue:inst22|ins[12][11]       ; 1       ;
+; InstructionQueue:inst22|ins[43][11]       ; 1       ;
+; InstructionQueue:inst22|ins[11][11]       ; 1       ;
+; InstructionQueue:inst22|ins[39][11]       ; 1       ;
+; InstructionQueue:inst22|ins[23][11]       ; 1       ;
+; InstructionQueue:inst22|ins[19][11]       ; 1       ;
+; InstructionQueue:inst22|ins[3][11]        ; 1       ;
+; InstructionQueue:inst22|ins[47][11]       ; 1       ;
+; InstructionQueue:inst22|ins[15][11]       ; 1       ;
+; InstructionQueue:inst22|ins[39][0]        ; 1       ;
+; InstructionQueue:inst22|ins[6][0]         ; 1       ;
+; InstructionQueue:inst22|ins[7][0]         ; 1       ;
+; InstructionQueue:inst22|ins[24][0]        ; 1       ;
+; InstructionQueue:inst22|ins[41][0]        ; 1       ;
+; InstructionQueue:inst22|ins[9][0]         ; 1       ;
+; InstructionQueue:inst22|ins[8][0]         ; 1       ;
+; InstructionQueue:inst22|ins[11][0]        ; 1       ;
+; InstructionQueue:inst22|ins[17][0]        ; 1       ;
+; InstructionQueue:inst22|ins[19][0]        ; 1       ;
+; InstructionQueue:inst22|ins[1][0]         ; 1       ;
+; InstructionQueue:inst22|ins[0][0]         ; 1       ;
+; InstructionQueue:inst22|ins[13][0]        ; 1       ;
+; InstructionQueue:inst22|ins[44][0]        ; 1       ;
+; InstructionQueue:inst22|ins[47][0]        ; 1       ;
+; InstructionQueue:inst22|ins[15][0]        ; 1       ;
+; InstructionQueue:inst22|ins[21][1]        ; 1       ;
+; InstructionQueue:inst22|ins[18][1]        ; 1       ;
+; InstructionQueue:inst22|ins[20][1]        ; 1       ;
+; InstructionQueue:inst22|ins[24][1]        ; 1       ;
+; InstructionQueue:inst22|ins[23][1]        ; 1       ;
+; InstructionQueue:inst22|ins[19][1]        ; 1       ;
+; InstructionQueue:inst22|ins[46][1]        ; 1       ;
+; InstructionQueue:inst22|ins[44][1]        ; 1       ;
+; InstructionQueue:inst22|ins[47][1]        ; 1       ;
+; InstructionQueue:inst22|ins[14][1]        ; 1       ;
+; InstructionQueue:inst22|ins[9][1]         ; 1       ;
+; InstructionQueue:inst22|ins[1][1]         ; 1       ;
+; InstructionQueue:inst22|ins[8][1]         ; 1       ;
+; InstructionQueue:inst22|ins[0][1]         ; 1       ;
+; InstructionQueue:inst22|ins[15][1]        ; 1       ;
+; InstructionQueue:inst22|ins[17][2]        ; 1       ;
+; InstructionQueue:inst22|ins[1][2]         ; 1       ;
+; InstructionQueue:inst22|ins[18][2]        ; 1       ;
+; InstructionQueue:inst22|ins[24][2]        ; 1       ;
+; InstructionQueue:inst22|ins[20][2]        ; 1       ;
+; InstructionQueue:inst22|ins[16][2]        ; 1       ;
+; InstructionQueue:inst22|ins[0][2]         ; 1       ;
+; InstructionQueue:inst22|ins[44][2]        ; 1       ;
+; InstructionQueue:inst22|ins[19][2]        ; 1       ;
+; InstructionQueue:inst22|ins[47][2]        ; 1       ;
+; InstructionQueue:inst22|ins[46][15]       ; 1       ;
+; InstructionQueue:inst22|ins[1][15]        ; 1       ;
+; InstructionQueue:inst22|ins[24][15]       ; 1       ;
+; InstructionQueue:inst22|ins[0][15]        ; 1       ;
+; InstructionQueue:inst22|ins[43][15]       ; 1       ;
+; InstructionQueue:inst22|ins[10][3]        ; 1       ;
+; InstructionQueue:inst22|ins[22][3]        ; 1       ;
+; InstructionQueue:inst22|ins[46][3]        ; 1       ;
+; InstructionQueue:inst22|ins[20][3]        ; 1       ;
+; InstructionQueue:inst22|ins[11][3]        ; 1       ;
+; InstructionQueue:inst22|ins[24][4]        ; 1       ;
+; InstructionQueue:inst22|ins[10][4]        ; 1       ;
+; InstructionQueue:inst22|ins[8][4]         ; 1       ;
+; InstructionQueue:inst22|ins[11][4]        ; 1       ;
+; InstructionQueue:inst22|ins[22][4]        ; 1       ;
+; InstructionQueue:inst22|ins[20][4]        ; 1       ;
+; InstructionQueue:inst22|ins[46][4]        ; 1       ;
+; InstructionQueue:inst22|ins[46][5]        ; 1       ;
+; InstructionQueue:inst22|ins[24][5]        ; 1       ;
+; InstructionQueue:inst22|ins[41][14]       ; 1       ;
+; InstructionQueue:inst22|ins[24][14]       ; 1       ;
+; InstructionQueue:inst22|ins[40][14]       ; 1       ;
+; InstructionQueue:inst22|ins[21][14]       ; 1       ;
+; InstructionQueue:inst22|ins[20][14]       ; 1       ;
+; InstructionQueue:inst22|ins[23][14]       ; 1       ;
+; InstructionQueue:inst22|ins[39][14]       ; 1       ;
+; Total number of inverted registers = 163* ;         ;
 +-------------------------------------------+---------+
 * Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -420,20 +423,20 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |CircuitoCompleto|ProgramCounter:inst13|contador_aux[11]                    ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|binary[10]         ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst|Mux0 ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |CircuitoCompleto|ProgramCounter:inst13|contador_aux[5]                     ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|binary[8]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst|Mux2 ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |CircuitoCompleto|Protoboard:inst6|BinarioaBCD:b2v_inst2|bcds_next          ;
 ; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica4:inst2|CircuitoAritmetico:b2v_inst2|Mux13        ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica5:inst|Mux17                                      ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica5:inst|Mux9                                       ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|mux2a1:inst3|Selector12                                   ;
-; 7:1                ; 15 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica4:inst2|mux2a1:b2v_inst5|Selector1                ;
-; 256:1              ; 16 bits   ; 2720 LEs      ; 2720 LEs             ; 0 LEs                  ; No         ; |CircuitoCompleto|InstructionQueue:inst20|Mux8                              ;
-; 257:1              ; 16 bits   ; 2736 LEs      ; 2736 LEs             ; 0 LEs                  ; No         ; |CircuitoCompleto|mux2a1:inst4|Selector8                                    ;
+; 8:1                ; 13 bits   ; 65 LEs        ; 65 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica5:inst|Mux23                                      ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica5:inst|Mux0                                       ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|mux2a1:inst3|Selector14                                   ;
+; 7:1                ; 15 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |CircuitoCompleto|Practica4:inst2|mux2a1:b2v_inst5|Selector5                ;
+; 256:1              ; 16 bits   ; 2720 LEs      ; 2720 LEs             ; 0 LEs                  ; No         ; |CircuitoCompleto|InstructionQueue:inst22|Mux1                              ;
+; 256:1              ; 16 bits   ; 2720 LEs      ; 2720 LEs             ; 0 LEs                  ; No         ; |CircuitoCompleto|MemoryBank:inst15|Mux9                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 
 
@@ -491,24 +494,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 33                          ;
-; cycloneiii_ff         ; 8410                        ;
-;     ENA               ; 8354                        ;
-;     ENA SLD           ; 3                           ;
+; cycloneiii_ff         ; 8418                        ;
+;     ENA               ; 8363                        ;
+;     ENA SLD           ; 2                           ;
 ;     SLD               ; 9                           ;
 ;     plain             ; 44                          ;
-; cycloneiii_lcell_comb ; 6620                        ;
-;     arith             ; 50                          ;
-;         2 data inputs ; 27                          ;
-;         3 data inputs ; 23                          ;
-;     normal            ; 6570                        ;
+; cycloneiii_lcell_comb ; 6640                        ;
+;     arith             ; 56                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 24                          ;
+;     normal            ; 6584                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 147                         ;
-;         2 data inputs ; 268                         ;
-;         3 data inputs ; 348                         ;
-;         4 data inputs ; 5806                        ;
+;         1 data inputs ; 171                         ;
+;         2 data inputs ; 269                         ;
+;         3 data inputs ; 357                         ;
+;         4 data inputs ; 5786                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 24.30                       ;
-; Average LUT depth     ; 15.75                       ;
+; Max LUT depth         ; 26.00                       ;
+; Average LUT depth     ; 16.11                       ;
 +-----------------------+-----------------------------+
 
 
@@ -517,7 +520,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:01     ;
+; Top            ; 00:01:09     ;
 +----------------+--------------+
 
 
@@ -527,155 +530,156 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 29 16:37:30 2020
+    Info: Processing started: Mon Nov 30 17:08:38 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CircuitoCompleto -c CircuitoCompleto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/pp/proyecto-final-circuitos/ir_counter.vhd
-    Info (12022): Found design unit 1: IR_Counter-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/IR_Counter.vhd Line: 15
-    Info (12023): Found entity 1: IR_Counter File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/IR_Counter.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/pp/proyecto-final-circuitos/memorybank/memorybank.vhd
-    Info (12022): Found design unit 1: MemoryBank-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/MemoryBank/MemoryBank.vhd Line: 19
-    Info (12023): Found entity 1: MemoryBank File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/MemoryBank/MemoryBank.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/pp/proyecto-final-circuitos/datamemory/datamemory.vhd
-    Info (12022): Found design unit 1: DataMemory-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/DataMemory/DataMemory.vhd Line: 26
-    Info (12023): Found entity 1: DataMemory File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/DataMemory/DataMemory.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/pp/proyecto-final-circuitos/instructionqueue/instructionqueue.vhd
-    Info (12022): Found design unit 1: InstructionQueue-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 31
-    Info (12023): Found entity 1: InstructionQueue File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/pp/proyecto-final-circuitos/programcounter/programcounter.vhd
-    Info (12022): Found design unit 1: ProgramCounter-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd Line: 24
-    Info (12023): Found entity 1: ProgramCounter File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/proyecto-final-circuitos/ir_counter/ir_counter.vhd
+    Info (12022): Found design unit 1: IR_Counter-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/IR_Counter/IR_Counter.vhd Line: 15
+    Info (12023): Found entity 1: IR_Counter File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/IR_Counter/IR_Counter.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/proyecto-final-circuitos/memorybank/memorybank.vhd
+    Info (12022): Found design unit 1: MemoryBank-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/MemoryBank/MemoryBank.vhd Line: 19
+    Info (12023): Found entity 1: MemoryBank File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/MemoryBank/MemoryBank.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/proyecto-final-circuitos/datamemory/datamemory.vhd
+    Info (12022): Found design unit 1: DataMemory-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/DataMemory/DataMemory.vhd Line: 26
+    Info (12023): Found entity 1: DataMemory File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/DataMemory/DataMemory.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/proyecto-final-circuitos/instructionqueue/instructionqueue.vhd
+    Info (12022): Found design unit 1: InstructionQueue-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 33
+    Info (12023): Found entity 1: InstructionQueue File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ifons/documents/circuitoslógicos/proyectofinal/pruebas/pf/proyecto-final-circuitos/programcounter/programcounter.vhd
+    Info (12022): Found design unit 1: ProgramCounter-behaivour File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd Line: 24
+    Info (12023): Found entity 1: ProgramCounter File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/ProgramCounter/ProgramCounter.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/practica4.vhd
-    Info (12022): Found design unit 1: Practica4-bdf_type File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 37
-    Info (12023): Found entity 1: Practica4 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 24
+    Info (12022): Found design unit 1: Practica4-bdf_type File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 37
+    Info (12023): Found entity 1: Practica4 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/mux4a1/mux4a1.vhd
-    Info (12022): Found design unit 1: mux4a1-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd Line: 16
-    Info (12023): Found entity 1: mux4a1 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd Line: 6
+    Info (12022): Found design unit 1: mux4a1-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd Line: 16
+    Info (12023): Found entity 1: mux4a1 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/mux4a1/mux4a1.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/div_freq/div_freq.vhd
-    Info (12022): Found design unit 1: div_freq-Behavioral File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd Line: 13
-    Info (12023): Found entity 1: div_freq File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd Line: 4
+    Info (12022): Found design unit 1: div_freq-Behavioral File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd Line: 13
+    Info (12023): Found entity 1: div_freq File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/div_freq/div_freq.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/decobcda7/decobcda7.vhd
-    Info (12022): Found design unit 1: decoBCDa7-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd Line: 18
-    Info (12023): Found entity 1: decoBCDa7 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd Line: 6
+    Info (12022): Found design unit 1: decoBCDa7-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd Line: 18
+    Info (12023): Found entity 1: decoBCDa7 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/decoBCDa7/decoBCDa7.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/deco2a4/deco2a4.vhd
-    Info (12022): Found design unit 1: deco2a4-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd Line: 15
-    Info (12023): Found entity 1: deco2a4 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd Line: 6
+    Info (12022): Found design unit 1: deco2a4-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd Line: 15
+    Info (12023): Found entity 1: deco2a4 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/deco2a4/deco2a4.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/cont2/cont2.vhd
-    Info (12022): Found design unit 1: cont2-Behavioral File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd Line: 14
-    Info (12023): Found entity 1: cont2 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd Line: 6
+    Info (12022): Found design unit 1: cont2-Behavioral File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd Line: 14
+    Info (12023): Found entity 1: cont2 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/cont2/cont2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/practica2/practica2.vhd
-    Info (12022): Found design unit 1: Practica2-bdf_type File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 58
-    Info (12023): Found entity 1: Practica2 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 24
+    Info (12022): Found design unit 1: Practica2-bdf_type File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 58
+    Info (12023): Found entity 1: Practica2 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/inversor16todownto/inversor16todownto.vhd
-    Info (12022): Found design unit 1: inversor16todownto-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd Line: 16
-    Info (12023): Found entity 1: inversor16todownto File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd Line: 8
+    Info (12022): Found design unit 1: inversor16todownto-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd Line: 16
+    Info (12023): Found entity 1: inversor16todownto File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor16todownto/inversor16todownto.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/inversor4downtoto/inversor4downtoto.vhd
-    Info (12022): Found design unit 1: inversor4downtoto-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd Line: 18
-    Info (12023): Found entity 1: inversor4downtoto File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd Line: 7
+    Info (12022): Found design unit 1: inversor4downtoto-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd Line: 18
+    Info (12023): Found entity 1: inversor4downtoto File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/inversor4downtoto/inversor4downtoto.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/binarioabcd/binarioabcd.vhd
-    Info (12022): Found design unit 1: BinarioaBCD-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd Line: 16
-    Info (12023): Found entity 1: BinarioaBCD File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd Line: 7
+    Info (12022): Found design unit 1: BinarioaBCD-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd Line: 16
+    Info (12023): Found entity 1: BinarioaBCD File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/BinarioaBCD/BinarioaBCD.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file protoboard/protoboard.vhd
-    Info (12022): Found design unit 1: Protoboard-bdf_type File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 58
-    Info (12023): Found entity 1: Protoboard File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 24
+    Info (12022): Found design unit 1: Protoboard-bdf_type File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 58
+    Info (12023): Found entity 1: Protoboard File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file practica5/practica5.vhd
-    Info (12022): Found design unit 1: Practica5-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd Line: 30
-    Info (12023): Found entity 1: Practica5 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd Line: 5
+    Info (12022): Found design unit 1: Practica5-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd Line: 30
+    Info (12023): Found entity 1: Practica5 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/zerodetect/zerodetect.vhd
-    Info (12022): Found design unit 1: ZeroDetect-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd Line: 16
-    Info (12023): Found entity 1: ZeroDetect File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd Line: 7
+    Info (12022): Found design unit 1: ZeroDetect-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd Line: 16
+    Info (12023): Found entity 1: ZeroDetect File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/ZeroDetect/ZeroDetect.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/shifter/shifter.vhd
-    Info (12022): Found design unit 1: Shifter-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Shifter/Shifter.vhd Line: 17
-    Info (12023): Found entity 1: Shifter File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Shifter/Shifter.vhd Line: 7
+    Info (12022): Found design unit 1: Shifter-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Shifter/Shifter.vhd Line: 17
+    Info (12023): Found entity 1: Shifter File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Shifter/Shifter.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/sdivider/sdivider.vhd
-    Info (12022): Found design unit 1: SDivider-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/SDivider/SDivider.vhd Line: 21
-    Info (12023): Found entity 1: SDivider File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/SDivider/SDivider.vhd Line: 8
+    Info (12022): Found design unit 1: SDivider-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/SDivider/SDivider.vhd Line: 21
+    Info (12023): Found entity 1: SDivider File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/SDivider/SDivider.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/mux2a1/mux2a1.vhd
-    Info (12022): Found design unit 1: mux2a1-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd Line: 19
-    Info (12023): Found entity 1: mux2a1 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd Line: 8
+    Info (12022): Found design unit 1: mux2a1-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd Line: 19
+    Info (12023): Found entity 1: mux2a1 File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/mux2a1/mux2a1.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/firstbit/firstbit.vhd
-    Info (12022): Found design unit 1: FirstBit-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd Line: 16
-    Info (12023): Found entity 1: FirstBit File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd Line: 8
+    Info (12022): Found design unit 1: FirstBit-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd Line: 16
+    Info (12023): Found entity 1: FirstBit File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/FirstBit/FirstBit.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/circuitologico/circuitologico.vhd
-    Info (12022): Found design unit 1: CircuitoLogico-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd Line: 18
-    Info (12023): Found entity 1: CircuitoLogico File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd Line: 7
+    Info (12022): Found design unit 1: CircuitoLogico-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd Line: 18
+    Info (12023): Found entity 1: CircuitoLogico File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoLogico/CircuitoLogico.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file practica4/circuitoaritmetico/circuitoaritmetico.vhd
-    Info (12022): Found design unit 1: CircuitoAritmetico-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 20
-    Info (12023): Found entity 1: CircuitoAritmetico File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 7
+    Info (12022): Found design unit 1: CircuitoAritmetico-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 20
+    Info (12023): Found entity 1: CircuitoAritmetico File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file circuitocompleto.bdf
     Info (12023): Found entity 1: CircuitoCompleto
 Info (12021): Found 2 design units, including 1 entities, in source file inversor16downtoto.vhd
-    Info (12022): Found design unit 1: inversor16downtoto-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/inversor16downtoto.vhd Line: 16
-    Info (12023): Found entity 1: inversor16downtoto File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/inversor16downtoto.vhd Line: 8
+    Info (12022): Found design unit 1: inversor16downtoto-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/inversor16downtoto.vhd Line: 16
+    Info (12023): Found entity 1: inversor16downtoto File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/inversor16downtoto.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file constant_in.vhd
-    Info (12022): Found design unit 1: constant_in-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/constant_in.vhd Line: 18
-    Info (12023): Found entity 1: constant_in File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/constant_in.vhd Line: 8
+    Info (12022): Found design unit 1: constant_in-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/constant_in.vhd Line: 18
+    Info (12023): Found entity 1: constant_in File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/constant_in.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file data_in.vhd
-    Info (12022): Found design unit 1: data_in-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/data_in.vhd Line: 16
-    Info (12023): Found entity 1: data_in File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/data_in.vhd Line: 8
+    Info (12022): Found design unit 1: data_in-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/data_in.vhd Line: 16
+    Info (12023): Found entity 1: data_in File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/data_in.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file busdivider.vhd
-    Info (12022): Found design unit 1: busDivider-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/busDivider.vhd Line: 16
-    Info (12023): Found entity 1: busDivider File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/busDivider.vhd Line: 8
+    Info (12022): Found design unit 1: busDivider-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/busDivider.vhd Line: 16
+    Info (12023): Found entity 1: busDivider File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/busDivider.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file palabracontrol.vhd
-    Info (12022): Found design unit 1: PalabraControl-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/PalabraControl.vhd Line: 23
-    Info (12023): Found entity 1: PalabraControl File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/PalabraControl.vhd Line: 8
+    Info (12022): Found design unit 1: PalabraControl-behavior File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/PalabraControl.vhd Line: 23
+    Info (12023): Found entity 1: PalabraControl File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/PalabraControl.vhd Line: 8
 Info (12127): Elaborating entity "CircuitoCompleto" for the top level hierarchy
 Info (12128): Elaborating entity "Protoboard" for hierarchy "Protoboard:inst6"
-Info (12128): Elaborating entity "inversor16todownto" for hierarchy "Protoboard:inst6|inversor16todownto:b2v_inst" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 152
-Info (12128): Elaborating entity "BinarioaBCD" for hierarchy "Protoboard:inst6|BinarioaBCD:b2v_inst2" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 157
-Info (12128): Elaborating entity "inversor4downtoto" for hierarchy "Protoboard:inst6|inversor4downtoto:b2v_inst3" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 169
-Info (12128): Elaborating entity "Practica2" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 201
-Info (12128): Elaborating entity "mux4a1" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 126
-Info (12128): Elaborating entity "decoBCDa7" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|decoBCDa7:b2v_inst1" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 135
-Info (12128): Elaborating entity "cont2" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|cont2:b2v_inst2" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 146
-Info (12128): Elaborating entity "div_freq" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 152
-Info (12128): Elaborating entity "deco2a4" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|deco2a4:b2v_inst4" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 160
+Info (12128): Elaborating entity "inversor16todownto" for hierarchy "Protoboard:inst6|inversor16todownto:b2v_inst" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 152
+Info (12128): Elaborating entity "BinarioaBCD" for hierarchy "Protoboard:inst6|BinarioaBCD:b2v_inst2" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 157
+Info (12128): Elaborating entity "inversor4downtoto" for hierarchy "Protoboard:inst6|inversor4downtoto:b2v_inst3" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 169
+Info (12128): Elaborating entity "Practica2" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Protoboard.vhd Line: 201
+Info (12128): Elaborating entity "mux4a1" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|mux4a1:b2v_inst" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 126
+Info (12128): Elaborating entity "decoBCDa7" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|decoBCDa7:b2v_inst1" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 135
+Info (12128): Elaborating entity "cont2" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|cont2:b2v_inst2" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 146
+Info (12128): Elaborating entity "div_freq" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|div_freq:b2v_inst3" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 152
+Info (12128): Elaborating entity "deco2a4" for hierarchy "Protoboard:inst6|Practica2:b2v_inst7|deco2a4:b2v_inst4" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Protoboard/Practica2/Practica2.vhd Line: 160
 Info (12128): Elaborating entity "busDivider" for hierarchy "busDivider:inst10"
 Info (12128): Elaborating entity "mux2a1" for hierarchy "mux2a1:inst3"
-Info (12128): Elaborating entity "InstructionQueue" for hierarchy "InstructionQueue:inst20"
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(98): signal "ins" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 98
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(100): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 100
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(102): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 102
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(103): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 103
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(104): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 104
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(105): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 105
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(106): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 106
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(107): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 107
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(108): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 108
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(109): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 109
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(110): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 110
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(111): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 111
-Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(112): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 112
+Info (12128): Elaborating entity "InstructionQueue" for hierarchy "InstructionQueue:inst22"
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(104): signal "ins" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(106): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 106
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(108): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 108
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(109): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(110): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 110
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(111): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 111
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(112): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 112
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(113): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 113
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(114): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 114
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(115): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 115
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(116): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 116
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(117): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 117
+Warning (10492): VHDL Process Statement warning at InstructionQueue.vhd(118): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/InstructionQueue/InstructionQueue.vhd Line: 118
 Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:inst13"
 Info (12128): Elaborating entity "inversor16todownto" for hierarchy "inversor16todownto:inst7"
 Info (12128): Elaborating entity "Practica4" for hierarchy "Practica4:inst2"
-Info (12128): Elaborating entity "SDivider" for hierarchy "Practica4:inst2|SDivider:b2v_inst" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 112
-Info (12128): Elaborating entity "FirstBit" for hierarchy "Practica4:inst2|FirstBit:b2v_inst1" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 121
-Info (12128): Elaborating entity "CircuitoAritmetico" for hierarchy "Practica4:inst2|CircuitoAritmetico:b2v_inst2" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 126
-Warning (10541): VHDL Signal Declaration warning at CircuitoAritmetico.vhd(15): used implicit default value for signal "COUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 15
-Info (12128): Elaborating entity "CircuitoLogico" for hierarchy "Practica4:inst2|CircuitoLogico:b2v_inst3" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 135
-Info (12128): Elaborating entity "Shifter" for hierarchy "Practica4:inst2|Shifter:b2v_inst6" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 156
-Info (12128): Elaborating entity "ZeroDetect" for hierarchy "Practica4:inst2|ZeroDetect:b2v_inst8" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 165
+Info (12128): Elaborating entity "SDivider" for hierarchy "Practica4:inst2|SDivider:b2v_inst" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 112
+Info (12128): Elaborating entity "FirstBit" for hierarchy "Practica4:inst2|FirstBit:b2v_inst1" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 121
+Info (12128): Elaborating entity "CircuitoAritmetico" for hierarchy "Practica4:inst2|CircuitoAritmetico:b2v_inst2" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 126
+Warning (10541): VHDL Signal Declaration warning at CircuitoAritmetico.vhd(15): used implicit default value for signal "COUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/CircuitoAritmetico/CircuitoAritmetico.vhd Line: 15
+Info (12128): Elaborating entity "CircuitoLogico" for hierarchy "Practica4:inst2|CircuitoLogico:b2v_inst3" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 135
+Info (12128): Elaborating entity "Shifter" for hierarchy "Practica4:inst2|Shifter:b2v_inst6" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 156
+Info (12128): Elaborating entity "ZeroDetect" for hierarchy "Practica4:inst2|ZeroDetect:b2v_inst8" File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica4/Practica4.vhd Line: 165
 Info (12128): Elaborating entity "inversor16downtoto" for hierarchy "inversor16downtoto:inst8"
 Info (12128): Elaborating entity "Practica5" for hierarchy "Practica5:inst"
-Warning (10036): Verilog HDL or VHDL warning at Practica5.vhd(34): object "cte" assigned a value but never read File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/PP/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd Line: 34
+Warning (10036): Verilog HDL or VHDL warning at Practica5.vhd(34): object "cte" assigned a value but never read File: C:/Users/ifons/Documents/CircuitosLógicos/ProyectoFinal/Pruebas/PF/Proyecto-Final-Circuitos/CircuitoCompleto/Practica5/Practica5.vhd Line: 34
 Info (12128): Elaborating entity "MemoryBank" for hierarchy "MemoryBank:inst15"
+Info (12128): Elaborating entity "IR_Counter" for hierarchy "IR_Counter:inst19"
 Info (12128): Elaborating entity "constant_in" for hierarchy "constant_in:inst5"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "carry" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (17049): 16 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 14855 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 14853 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 14822 logic cells
+    Info (21061): Implemented 14820 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Sun Nov 29 16:38:59 2020
-    Info: Elapsed time: 00:01:29
-    Info: Total CPU time (on all processors): 00:01:50
+    Info: Peak virtual memory: 4854 megabytes
+    Info: Processing ended: Mon Nov 30 17:10:24 2020
+    Info: Elapsed time: 00:01:46
+    Info: Total CPU time (on all processors): 00:02:02
 
 

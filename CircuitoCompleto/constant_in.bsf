@@ -26,8 +26,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "OP[0..3]" (rect 0 0 33 12)(font "Arial" ))
-		(text "OP[0..3]" (rect 21 27 54 39)(font "Arial" ))
+		(text "OP[0..2]" (rect 0 0 33 12)(font "Arial" ))
+		(text "OP[0..2]" (rect 21 27 54 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
